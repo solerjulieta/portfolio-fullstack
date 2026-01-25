@@ -66,7 +66,6 @@ export default function ReactSelectAdapter({ field, options, isMulti, ...props }
                     '&:hover': {
                         borderColor: '#e5e7eb'
                     },
-                    //borderColor: state.isFocused ? '#e5e7eb' : '#e5e7eb'
                 }),
                 // 1. Z-INDEX y PORTAL: (Mantener para flotación)
                 multiValue: (provided) => ({
