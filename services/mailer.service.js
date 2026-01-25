@@ -1,50 +1,32 @@
-import nodemailer from 'nodemailer'
+import { Resend } from 'resend'
 import 'dotenv/config'
 
-// Configuración única
-const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 587,
-    secure: false,
-    auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_APP_PASS,
-    },
-    tls: {
-        rejectUnauthorized: false
-    },
-    connectionTimeout: 10000,
-    greetingTimeout: 10000,
-    socketTimeout: 10000
-})
+const resend = new Resend(process.env.RESEND_API_KEY)
 
-//Verificacion al boot
-transporter.verify((error, success) => {
-    if(error){
-        console.error('SMTP VERIFY FAILED:', error)
-    } else {
-        console.log('SMTP READY')
+async function sendGenericEmail({ to, subject, html, text, replyTo }) {
+  try {
+    const { data, error } = await resend.emails.send({
+      from: 'Portfolio <onboarding@resend.dev>',
+      to: [to],
+      subject,
+      html,
+      text,
+      reply_to: replyTo
+    })
+
+    if (error) {
+      console.error('RESEND ERROR:', error)
+      throw new Error(error.message)
     }
-})
 
-/**
- * Función genérica para enviar cualquier correo.
- * @param {object} mailOptions - Opciones de Nodemailer (to, subject, html, from, etc.)
- */
-async function sendGenericEmail(mailOptions)
-{
-    return transporter.sendMail(mailOptions)
-    .then(info => {
-        console.log("Email enviado: %s", info.messageId)
-        //Devolvemos el resultado (info) para el siguiente then()
-        return info
-    })
-    .catch(error => {
-        console.error("Error al enviar el email:", error)
-        throw error
-    })
+    console.log('EMAIL SENT:', data.id)
+    return data
+  } catch (err) {
+    console.error('RESEND FAIL:', err)
+    throw err
+  }
 }
 
-export{
-    sendGenericEmail
+export {
+  sendGenericEmail
 }
