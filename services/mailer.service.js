@@ -1,7 +1,7 @@
 import { Resend } from 'resend'
 import 'dotenv/config'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resend = new Resend(process.env.RESEND_SECRET_KEY)
 
 async function sendGenericEmail({ to, subject, html, text, replyTo }) {
   try {
