@@ -22,6 +22,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const app = express()
+app.use(express.json())
 app.set('view engine', 'ejs') //Le decimos al servidor que vamos a usar EJS como motor de plantillas
 
 app.use(express.urlencoded({ extended: true }))
