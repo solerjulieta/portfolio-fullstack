@@ -3,10 +3,27 @@ import 'dotenv/config'
 
 // Configuración única
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
     auth: {
         user: process.env.GMAIL_USER,
         pass: process.env.GMAIL_APP_PASS,
+    },
+    tls: {
+        rejectUnauthorized: false
+    },
+    connectionTimeout: 10000,
+    greetingTimeout: 10000,
+    socketTimeout: 10000
+})
+
+//Verificacion al boot
+transporter.verify((error, success) => {
+    if(error){
+        console.error('SMTP VERIFY FAILED:', error)
+    } else {
+        console.log('SMTP READY')
     }
 })
 
@@ -14,7 +31,7 @@ const transporter = nodemailer.createTransport({
  * Función genérica para enviar cualquier correo.
  * @param {object} mailOptions - Opciones de Nodemailer (to, subject, html, from, etc.)
  */
-function sendGenericEmail(mailOptions)
+async function sendGenericEmail(mailOptions)
 {
     return transporter.sendMail(mailOptions)
     .then(info => {
@@ -24,7 +41,7 @@ function sendGenericEmail(mailOptions)
     })
     .catch(error => {
         console.error("Error al enviar el email:", error)
-        throw new Error("Fallo al enviar el correo: " + error.message)
+        throw error
     })
 }
 
