@@ -2,7 +2,7 @@ import { MongoClient, ObjectId } from 'mongodb'
 import fs from 'fs'
 import path from 'path'
 
-const uri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017'
+const uri = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017'
 //const client = new MongoClient('mongodb://127.0.0.1:27017')
 const client = new MongoClient(uri)
 const db = client.db('DB_JS')
