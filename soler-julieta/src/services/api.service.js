@@ -1,3 +1,5 @@
+const BASE_URL = process.env.REACT_APP_API_URL
+
 export async function call({ uri, method = 'GET', body = undefined, isMultipart = false })
 {
     const options = {
@@ -16,7 +18,7 @@ export async function call({ uri, method = 'GET', body = undefined, isMultipart 
         }
     }
 
-    return fetch(`https://portfolio-api-5e52.onrender.com/${uri}`, options)
+    return fetch(`${BASE_URL}/${uri}`, options)
     .then(async response => {
         const data = await response.json().catch(() => {})
         if(!response.ok) throw data 
