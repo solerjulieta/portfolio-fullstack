@@ -1,6 +1,8 @@
 import { MongoClient, ObjectId } from 'mongodb'
 
-const client = new MongoClient('mongodb://127.0.0.1:27017')
+const uri = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017'
+//const client = new MongoClient('mongodb://127.0.0.1:27017')
+const client = new MongoClient(uri)
 const db = client.db('DB_JS')
 const education = db.collection('Education')
 const status = db.collection('Status')
