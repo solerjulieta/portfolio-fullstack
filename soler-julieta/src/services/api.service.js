@@ -16,7 +16,7 @@ export async function call({ uri, method = 'GET', body = undefined, isMultipart 
         }
     }
 
-    return fetch(`http://localhost:3000/api/${uri}`, options)
+    return fetch(`https://portfolio-api-5e52.onrender.com/${uri}`, options)
     .then(async response => {
         const data = await response.json().catch(() => {})
         if(!response.ok) throw data 
