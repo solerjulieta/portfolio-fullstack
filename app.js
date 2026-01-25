@@ -25,28 +25,13 @@ const app = express()
 app.set('view engine', 'ejs') //Le decimos al servidor que vamos a usar EJS como motor de plantillas
 
 app.use(express.urlencoded({ extended: true }))
-app.use(express.json())
-/*app.use(cors({
-    origin: 'http://localhost:5173',
-    credentials: true
-}))*/
 app.use(cookieParser())
 
-const allowedOrigins = [
-    'http://localhost:5173',
-    'https://julieta-soler.vercel.app'
-]
-
 app.use(cors({
-    origin: function (origin, callback){
-        if (!origin) return callback(null, true)
-        if(allowedOrigins.indexOf(origin) !== 1){
-            callback(null, true)
-        } else {
-            callback(new Error('No permitido por CORS'))
-        }
-    },
-    credentials: true
+    origin: ['https://julieta-soler.vercel.app', 'https://portfolio-api-5e52.onrender.com', // El dominio de tu propio backend en Render (aunque a veces no es necesario, es buena práctica)
+        'https://*.vercel.app'], 
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'auth-token']
 }))
 
 app.use(express.static(path.join(__dirname, 'public')))
