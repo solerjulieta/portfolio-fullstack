@@ -31,7 +31,8 @@ app.use(cors({
     origin: ['https://julieta-soler.vercel.app', 'https://portfolio-api-5e52.onrender.com', // El dominio de tu propio backend en Render (aunque a veces no es necesario, es buena práctica)
         'https://*.vercel.app'], 
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization', 'auth-token']
+    allowedHeaders: ['Content-Type', 'Authorization', 'auth-token'],
+    credentials: true
 }))
 
 app.use(express.static(path.join(__dirname, 'public')))
