@@ -26,11 +26,28 @@ app.set('view engine', 'ejs') //Le decimos al servidor que vamos a usar EJS como
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-app.use(cors({
+/*app.use(cors({
     origin: 'http://localhost:5173',
     credentials: true
-}))
+}))*/
 app.use(cookieParser())
+
+const allowedOrigins = [
+    'http://localhost:5173',
+    'https://julieta-soler.vercel.app'
+]
+
+app.use(cors({
+    origin: function (origin, callback){
+        if (!origin) return callback(null, true)
+        if(allowedOrigins.indexOf(origin) !== 1){
+            callback(null, true)
+        } else {
+            callback(new Error('No permitido por CORS'))
+        }
+    },
+    credentials: true
+}))
 
 app.use(express.static(path.join(__dirname, 'public')))
 
