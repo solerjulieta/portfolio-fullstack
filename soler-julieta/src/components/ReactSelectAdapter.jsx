@@ -61,8 +61,7 @@ export default function ReactSelectAdapter({ field, options, isMulti, ...props }
             styles={{
                 control: (provided, state) => ({
                     ...provided,
-                    boxShadow: 'none',
-                    borderColor: '#e5e7eb',
+                    boxShadow: 'none',                    
                     borderRadius: '8px',
                     '&:hover': {
                         borderColor: '#e5e7eb'
