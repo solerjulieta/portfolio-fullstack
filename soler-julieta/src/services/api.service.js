@@ -18,7 +18,7 @@ export async function call({ uri, method = 'GET', body = undefined, isMultipart 
         }
     }
 
-    return fetch(`${BASE_URL}/${uri}`, options)
+    return fetch(`${BASE_URL}/api/${uri}`, options)
     .then(async response => {
         const data = await response.json().catch(() => {})
         if(!response.ok) throw data 
