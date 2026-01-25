@@ -3,7 +3,7 @@ import * as technologiesController from '../controllers/technologies.api.control
 
 const router = Router()
 
-router.route('/api/technologies')
+router.route('/technologies')
     .get(technologiesController.getAll)
 
 export default router

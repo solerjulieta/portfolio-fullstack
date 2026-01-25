@@ -3,7 +3,7 @@ import * as educationCategoriesController from '../controllers/educationCategori
 
 const router = Router()
 
-router.route('/api/education-categories')
+router.route('/education-categories')
     .get(educationCategoriesController.getAll)
 
 export default router

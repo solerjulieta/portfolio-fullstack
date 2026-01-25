@@ -4,22 +4,22 @@ import { validateEducation } from '../../middlewares/education.middleware.js'
 
 const router = Router()
 
-router.route('/api/education')
+router.route('/education')
     .get(educationApiController.getAll)
     .post([validateEducation], educationApiController.create)
 
-router.route('/api/education/stats')
+router.route('/education/stats')
     .get(educationApiController.getTotal)
 
-router.route('/api/education/:id')
+router.route('/education/:id')
     .get(educationApiController.getById)
     .patch(educationApiController.edit)
     .delete(educationApiController.deleteEducation)
 
-router.route('/api/education/:id/archive')
+router.route('/education/:id/archive')
     .patch(educationApiController.archive)
 
-router.route('/api/education/:id/restore')
+router.route('/education/:id/restore')
     .patch(educationApiController.restore)
 
 export default router
