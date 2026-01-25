@@ -6,31 +6,31 @@ import * as cvApiController from '../controllers/cv.api.controller.js'
 
 const router = Router()
 
-router.route('/api/admin')
+router.route('/admin')
     .post(adminApiController.register)
 
 /**
  * Login & Logout
  */
-router.route('/api/admin/login')
+router.route('/admin/login')
     .post([validateLogin], adminApiController.login)
 
-router.route('/api/admin/logout')
+router.route('/admin/logout')
     .delete(adminApiController.logout)
 
-router.route('/api/admin/forgotPassword')
+router.route('/admin/forgotPassword')
     .post([validateUser], adminApiController.forgotPassword)
 
-router.route('/api/admin/forgotPassword/:token')
+router.route('/admin/forgotPassword/:token')
     .post([validateRecoveryPassword], adminApiController.recoveryPassword)
 
 // Nueva ruta para chequear si está logueado
-router.route('/api/admin/check')
+router.route('/admin/check')
     .get(isLogin, (req, res) => {
         res.status(200).json({ logged: true, account: req.account })
     })
 
-router.route('/api/admin/cv')
+router.route('/admin/cv')
     .get([isLogin], cvApiController.getTotals)
 
 export default router

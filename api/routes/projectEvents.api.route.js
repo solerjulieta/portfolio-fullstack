@@ -3,13 +3,13 @@ import * as projectEventApiController from '../controllers/projectEvents.api.con
 
 const router = Router()
 
-router.route('/api/projects/events')
+router.route('/projects/events')
     .post(projectEventApiController.registerProjectEvent)
 
-router.route('/api/projects/most-visited')
+router.route('/projects/most-visited')
     .get(projectEventApiController.getMostVisitedProject)
 
-router.route('/api/projects/top')
+router.route('/projects/top')
     .get(projectEventApiController.getTopVisitedProjects)
 
 export default router

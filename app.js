@@ -34,17 +34,17 @@ app.use(cookieParser())
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/', ProjectsApiRoute)
-app.use('/', EducationApiRoute)
-app.use('/', AdminApiRoute)
-app.use('/', SkillsApiRoute)
-app.use('/', ContactApiRoute)
-app.use('/', EducationCategoriesApiRoute)
-app.use('/', ProjectCategoriesApiRoute)
-app.use('/', StatusApiRoute)
-app.use('/', TechnologiesApiRoute)
-app.use('/', CVApiRoute)
-app.use('/', ProjectEventsApiRoute)
+app.use('/api', ProjectsApiRoute)
+app.use('/api', EducationApiRoute)
+app.use('/api', AdminApiRoute)
+app.use('/api', SkillsApiRoute)
+app.use('/api', ContactApiRoute)
+app.use('/api', EducationCategoriesApiRoute)
+app.use('/api', ProjectCategoriesApiRoute)
+app.use('/api', StatusApiRoute)
+app.use('/api', TechnologiesApiRoute)
+app.use('/api', CVApiRoute)
+app.use('/api', ProjectEventsApiRoute)
 
 const PORT = 3000
 

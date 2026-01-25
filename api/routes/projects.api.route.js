@@ -5,25 +5,25 @@ import processProjectImage from '../../middlewares/processProjectImage.js'
 
 const router = Router()
 
-router.route('/api/projects')
+router.route('/projects')
     .get(projectsApiController.getAll)
     .post([uploadProjectImage.single('img'), processProjectImage], projectsApiController.create)
 
-router.route('/api/projects/stats')
+router.route('/projects/stats')
     .get(projectsApiController.getTotal)
 
-router.route('/api/project/:id')
+router.route('/project/:id')
     .get(projectsApiController.getById)
     .patch([uploadProjectImage.single('img'), processProjectImage], projectsApiController.edit)
     .delete(projectsApiController.deleteProject)
 
-router.route('/api/project/:id/image')
+router.route('/project/:id/image')
     .delete(projectsApiController.deleteImg)
 
-router.route('/api/project/:id/archive')
+router.route('/project/:id/archive')
     .patch(projectsApiController.archive)
 
-router.route('/api/project/:id/restore')
+router.route('/project/:id/restore')
     .patch(projectsApiController.restore)
 
 export default router
