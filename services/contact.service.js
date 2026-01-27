@@ -34,10 +34,10 @@ async function sendEmail(emailData)
     }
 
     const mailOptions = {
-        from: `"Contacto de Portfolio" <${emailData.email}>`,
+        from: 'Contacto Portfolio <onboarding@resend.dev>',
         to: process.env.MY_WORK_EMAIL,
         subject: `Nuevo contacto desde el Portfolio: ${emailData.name}`,
-        replyTo: emailData.email,
+        reply_to: emailData.email,
         text: `Nombre: ${emailData.name}\nEmail: ${emailData.email}\nMensaje: ${emailData.message}`, 
         html: htmlContent
     }
