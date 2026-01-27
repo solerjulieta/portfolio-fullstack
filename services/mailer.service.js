@@ -3,15 +3,15 @@ import 'dotenv/config'
 
 const resend = new Resend(process.env.RESEND_SECRET_KEY)
 
-async function sendGenericEmail({ to, subject, html, text, replyTo }) {
+async function sendGenericEmail({ to, subject, html, text, reply_to }) {
   try {
     const { data, error } = await resend.emails.send({
-      from: 'Portfolio <onboarding@resend.dev>',
+      from: 'Contacto desde Portfolio <onboarding@resend.dev>',
       to: [to],
       subject,
       html,
       text,
-      reply_to: replyTo
+      reply_to: reply_to
     })
 
     if (error) {
