@@ -17,6 +17,7 @@ async function sendEmail(req, res)
 async function sendEmail(req, res) {
   try {
     const emailData = req.body
+    console.log("Email data es", emailData)
     await contactService.sendEmail(emailData)
     res.status(200).json({ msg: 'contact_success' })
   } catch (err) {
