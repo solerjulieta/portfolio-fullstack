@@ -11,7 +11,7 @@ async function sendGenericEmail({ to, subject, html, text, reply_to }) {
       subject,
       html,
       text,
-      reply_to: reply_to
+      reply_to
     })
 
     if (error) {
