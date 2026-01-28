@@ -52,6 +52,60 @@ export default function MyProjects()
         }
     }
 
+    async function loadProjectsSnapshot() {
+        const res = await fetch('/data/portfolio.json')
+        if (!res.ok) throw new Error('Snapshot not found')
+
+        const json = await res.json()
+        return json.projects || []
+    }
+
+    async function loadProjectsSnapshot() {
+        const res = await fetch('/data/portfolio.json')
+        if (!res.ok) throw new Error('Snapshot not found')
+
+        const json = await res.json()
+        return json.projects || []
+    }
+
+    function publishOnly(data) {
+        return data.filter(item => item.status?.key === "PUBLISHED")
+    }
+
+    useEffect(() => {
+        let isMounted = true 
+
+        async function loadData(){
+            try{
+                const snapshot = await loadProjectsSnapshot()
+                if(!isMounted) return
+
+                const published = publishOnly(snapshot)
+                setProjects(published)
+            } catch (err) {
+                console.warn("No snapshot available", err)
+            }
+
+            try{
+                const apiData = await projectsService.getAll()
+                if(!isMounted) return
+
+                const published = publishOnly(apiData)
+                setProjects(published)
+                console.log("Projectos actualizados desde la API")
+            } catch (err) {
+                console.warn("API falló, se mantiene snapshot", err)
+            }
+        }
+
+        loadData()
+
+        return () => {
+            isMounted = false
+        }
+    }, [])
+
+    /*
     useEffect(() => {
         projectsService.getAll()
         .then(data => {
@@ -61,7 +115,7 @@ export default function MyProjects()
             setProjects(publishedProjects)
             console.log("los proyectos son", publishedProjects)
         })
-    }, [])
+    }, [])*/
 
     const totalGraphic = projects.filter(p => p.category?.key === "Graphic").length
     const totalWeb = projects.filter(p => p.category?.key === "Web").length
@@ -149,7 +203,7 @@ export default function MyProjects()
                 {headerReady && visibleProjects.map((project, index) => {
                     return(
                         <motion.li 
-                            key={project._id}
+                            key={project.uid}
                             //layout 
                             className="h-full"
                             variants={itemVariants}

@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import CompSection from './CompSection'
 import Subtitle from './Subtitle'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import educationService from '../services/education.service'
 import { motion, AnimatePresence } from "framer-motion"
 import AnimateH2 from './AnimateH2'
@@ -18,10 +18,87 @@ export default function MyEducation() {
   const [selectedCategory, setSelectedCategory] = useState("Degree")
   const [courseSubcategories, setCourseSubcategories] = useState([])
   const [selectedSubcategory, setSelectedSubcategory] = useState(null)
+  const [hydrated, setHydrated] = useState(false)
+  const isBackendRefresh = useRef(false)
 
   const breakpoint = useBreakpoint()
   const initialLimit = ITEMS_PER_SCREEN[breakpoint]
 
+  async function loadEducationSnapshot(){
+    const res = await fetch('/data/portfolio.json')
+    if(!res.ok) throw new Error('Snapshot not found')
+
+    const json = await res.json()
+    return json.education || []
+  }
+
+  function publishOnly(data) {
+    return data.filter(
+      item => item.status?.key === "PUBLISHED"
+    )
+  }
+
+  function buildSubcategories(data) {
+    const uniqueSubcatsMap = new Map()
+
+    data
+      .filter(
+        item =>
+          item.category?.key === 'Course' &&
+          item.subcategory?.es &&
+          item.subcategory?.en
+      )
+      .forEach(item => {
+        const key = item.subcategory.en
+        if (!uniqueSubcatsMap.has(key)) {
+          uniqueSubcatsMap.set(key, item.subcategory)
+        }
+      })
+
+    setCourseSubcategories(Array.from(uniqueSubcatsMap.values()))
+  }
+
+  useEffect(() => {
+    let isMounted = true
+
+    async function loadData(){
+      //Cargar snapshot primero
+      try{
+        const snapshot = await loadEducationSnapshot()
+        if(!isMounted) return
+
+        const published = publishOnly(snapshot)
+        setStudies(published)
+        buildSubcategories(published)
+        setHydrated(true)
+      } catch(err){
+        console.warn("No snapshot available", err)
+      }
+
+      //Pedir al backend en paralelo
+      try{
+        const apiData = await educationService.getAll()
+        if(!isMounted) return
+
+        const published = publishOnly(apiData)
+        isBackendRefresh.current = true
+        setStudies(published)
+        buildSubcategories(published)
+        console.log("Education updated from API")
+      } catch(err){
+        console.warn("API failed, keeping snapshot", err)
+      }
+
+
+    }
+          loadData()
+
+      return () => {
+        isMounted = false
+      }
+  }, [])
+
+  /*
   useEffect(() => {
     educationService.getAll().then(data => {
       const publishedStudies = data.filter(
@@ -47,7 +124,7 @@ export default function MyEducation() {
 
       setCourseSubcategories(Array.from(uniqueSubcatsMap.values()))
     })
-  }, [])
+  }, [])*/
 
   const totalDegree = studies.filter(s => s.category?.key === "Degree").length
 
@@ -114,7 +191,7 @@ export default function MyEducation() {
     >
       <motion.div
         variants={sectionVariants}
-        initial="hidden"
+        initial={hydrated ? false : "hidden"}
         whileInView="visible"
         viewport={{ once: true, margin: "-120px" }}
       >
@@ -223,9 +300,10 @@ export default function MyEducation() {
 
                     return (
                       <motion.div
-                        key={study._id || index}
+                        //key={study._id || index}
+                        key={study.uid}
                         layout
-                        initial={{ opacity: 0, x: isLeft ? -30 : 30 }}
+                        initial={hydrated && isBackendRefresh.current ? false : { opacity: 0, x: isLeft ? -30 : 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{
