@@ -3,7 +3,7 @@ import * as cvController from "../controllers/cv.api.controller.js"
 
 const router = Router()
 
-router.route("/cv/download")
+router.route('/cv/download')
   .get(cvController.downloadCV)
 
 router.route('/cv/stats')

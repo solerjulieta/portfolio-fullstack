@@ -11,7 +11,7 @@ async function downloadCV(req, res)
 
     await cvService.registerDownload({ role, lang })
 
-    const fileName = `cv-solerjulieta-${role}-${lang}.pdf`
+    const fileName = `cv-soler-julieta-${role}-${lang}.pdf`
     const filePath = path.resolve(
         "public",
         "cvs",
