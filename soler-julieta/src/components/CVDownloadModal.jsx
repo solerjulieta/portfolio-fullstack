@@ -8,6 +8,7 @@ export default function CVDownloadModal({ isOpen, onClose }) {
   const [role, setRole] = useState("dev")
   const defaultLang = i18n.language.startsWith("en") ? "en" : "es"
   const [lang, setLang] = useState(defaultLang)
+  const API_URL = import.meta.env.VITE_API_URL
 
   useEffect(() => {
     const detectedLang = i18n.language.startsWith("en") ? "en" : "es"
@@ -15,7 +16,7 @@ export default function CVDownloadModal({ isOpen, onClose }) {
   }, [i18n.language, isOpen])
 
   const handleDownload = () => {
-    window.location.href = `/api/cv/download?role=${role}&lang=${lang}`
+    window.location.href = `${API_URL}/api/cv/download?role=${role}&lang=${lang}`
     onClose()
   }
 
