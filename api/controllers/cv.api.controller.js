@@ -1,7 +1,7 @@
 import path from 'path'
 import * as cvService from '../../services/cv.service.js'
 import { fileURLToPath } from 'url'
-import fs from fs
+import fs from 'fs'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -24,7 +24,7 @@ async function downloadCV(req, res)
         fileName
     )*/
 
-    if(!fs.existsSync(fileURLToPath)){
+    if(!fs.existsSync(filePath)){
         console.error("CV NOT FOUND:", filePath)
         return res.status(404).json({ error: "CV no encontrado" })
     }
