@@ -1,5 +1,10 @@
 import path from 'path'
 import * as cvService from '../../services/cv.service.js'
+import { fileURLToPath } from 'url'
+import fs from fs
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 async function downloadCV(req, res)
 {
@@ -12,13 +17,19 @@ async function downloadCV(req, res)
     await cvService.registerDownload({ role, lang })
 
     const fileName = `cv-soler-julieta-${role}-${lang}.pdf`
-    const filePath = path.resolve(
+    const filePath = path.join(__dirname, "../../public/cvs", fileName)
+    /*const filePath = path.resolve(
         "public",
         "cvs",
         fileName
-    )
+    )*/
 
-    res.download(filePath, fileName)
+    if(!fs.existsSync(fileURLToPath)){
+        console.error("CV NOT FOUND:", filePath)
+        return res.status(404).json({ error: "CV no encontrado" })
+    }
+
+    return res.download(filePath, fileName)
 }
 
 async function getTotals(req, res)
