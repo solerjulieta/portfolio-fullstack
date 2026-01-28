@@ -1,0 +1,631 @@
+{
+    "meta": {
+        "generatedAt": "2026-01-27T14:00:00Z",
+        "version": "1.0"
+    },
+    "education": [
+        {
+            "id": "edu-1",
+            "uid": "design-and-programming",
+            "title": {
+                "es": "Técnico Superior en Diseño y Programación Web",
+                "en": "Technical Degree in Web Design and Programming"
+            },
+            "institution": {
+                "es": "Escuela Da Vinci – Escuela de Arte y Diseño Multimedial",
+                "en": "Escuela Da Vinci - Da Vinci School of Multimedia Art & Design"
+            },
+            "start": 2020,
+            "end": 2025,
+            "skills": [
+                {
+                    "es": "HTML",
+                    "en": "HTML"
+                },
+                {
+                    "es": "CCS3",
+                    "en": "CCS3"
+                },
+                {
+                    "es": "JavaScript",
+                    "en": "JavaScript"
+                },
+                {
+                    "es": "PHP",
+                    "en": "PHP"
+                },
+                {
+                    "es": "MySQL",
+                    "en": "MySQL"
+                }, 
+                {
+                    "es": "Vue",
+                    "en": "Vue"
+                },
+                {
+                    "es": "React",
+                    "en": "React"
+                }, 
+                {
+                    "es": "Node",
+                    "en": "Node"
+                },  
+                {
+                    "es": "Mongo",
+                    "en": "Mongo"
+                },   
+                {
+                    "es": "Wordpress",
+                    "en": "Wordpress"
+                }, 
+                {
+                    "es": "Photoshop",
+                    "en": "Photoshop"
+                },   
+                {
+                    "es": "Illustrator",
+                    "en": "Illustrator"
+                },
+                {
+                    "es": "Trello",
+                    "en": "Trello"
+                }                                                                                                                                                            
+            ],
+            "soft_skills": [
+                {
+                    "es": "Atención al detalle",
+                    "en": "Attention to detail"
+                },
+                {
+                    "es": "Trabajo en equipo",
+                    "en": "TeamWork"
+                }                
+            ],
+            "category": {
+                "key": "Degree",
+                "es": "Carrera",
+                "en": "Degree"
+            },
+            "subcategory": {
+                "es": "Web",
+                "en": "Web"
+            },
+            "mode": {
+                "es": "Virtual",
+                "en": "Online"
+            },
+            "status": {
+                "key": "PUBLISHED"
+            }
+        },
+        {
+            "id": "edu-2",
+            "uid": "graphic-design",
+            "title": {
+                "es": "Técnico Superior en Diseño Gráfico y Publicitario",
+                "en": "Technical Degree in Graphic and Advertising Design"
+            },
+            "institution": {
+                "es": "Instituto Superior Mariano Moreno",
+                "en": "Mariano Moreno Higher Institute"
+            },
+            "start": 2012,
+            "end": 2014,
+            "skills": [
+                {
+                    "es": "CorelDRAW",
+                    "en": "CorelDRAW"
+                },
+                {
+                    "es": "Photoshop",
+                    "en": "Photoshop"
+                },
+                {
+                    "es": "Illustrator",
+                    "en": "Illustrator"
+                },
+                {
+                    "es": "identidad visual",
+                    "en": "Visual Identity"
+                },
+                {
+                    "es": "Diseño de packaging",
+                    "en": "Packaging Design"
+                }                                                                                                                                                          
+            ],
+            "soft_skills": [
+                {
+                    "es": "Organización",
+                    "en": "Organization"
+                },
+                {
+                    "es": "Creatividad",
+                    "en": "Creativity"
+                },
+                {
+                    "es": "Comunicación visual",
+                    "en": "Visual Communication"
+                },
+                {
+                    "es": "Atención al detalle",
+                    "en": "Attention to Detail"
+                },
+                {
+                    "es": "Pensamiento crítico",
+                    "en": "Critical Thinking"
+                },
+                {
+                    "es": "Gestión del tiempo",
+                    "en": "Time Management"
+                },
+                {
+                    "es": "Resolución de problemas",
+                    "en": "Problem Solving"
+                }                         
+            ],
+            "category": {
+                "key": "Degree",
+                "es": "Carrera",
+                "en": "Degree"
+            },
+            "subcategory": {
+                "es": "Gráfico",
+                "en": "Graphic"
+            },
+            "mode": {
+                "es": "Presencial",
+                "en": "On-site"
+            },
+            "status": {
+                "key": "PUBLISHED"
+            }
+        },
+        {
+            "id": "edu-3",
+            "uid": "graphic-express",
+            "title": {
+                "es": "Adobe Gráfica Express CS6",
+                "en": "Adobe Graphic Express CS6"
+            },
+            "institution": {
+                "es": "Aguas de la Cañada",
+                "en": "Aguas de la Cañada"
+            },
+            "start": 2013,
+            "end": 2013,
+            "skills": [
+                {
+                    "es": "Illustrator",
+                    "en": "Illustrator"
+                },
+                {
+                    "es": "Photoshop",
+                    "en": "Photoshop"
+                },
+                {
+                    "es": "InDesign",
+                    "en": "InDesign"
+                }                                                                                                                                                          
+            ],
+            "category": {
+                "key": "Course",
+                "es": "Curso",
+                "en": "Course"
+            },
+            "subcategory": {
+                "es": "Software",
+                "en": "Software"
+            },
+            "mode": {
+                "es": "Presencial",
+                "en": "On-site"
+            },
+            "status": {
+                "key": "PUBLISHED"
+            }
+        },
+        {
+            "id": "edu-4",
+            "uid": "adobe-photoshop",
+            "title": {
+                "es": "Adobe Photoshop CS6",
+                "en": "Adobe Photoshop CS6"
+            },
+            "institution": {
+                "es": "Aqua",
+                "en": "Aqua"
+            },
+            "start": 2015,
+            "end": 2015,
+            "skills":{
+                "es": "Photoshop",
+                "en": "Photoshop"
+            },
+            "category": {
+                "key": "Course",
+                "es": "Curso",
+                "en": "Course"
+            },
+            "subcategory": {
+                "es": "Software",
+                "en": "Software"
+            },
+            "mode": {
+                "es": "Presencial",
+                "en": "On-site"
+            },
+            "status": {
+                "key": "PUBLISHED"
+            }
+        },
+        {
+            "id": "edu-5",
+            "uid": "adobe-illustrator",
+            "title": {
+                "es": "Adobe Illustrator CS6",
+                "en": "Adobe Illustrator CS6"
+            },
+            "institution": {
+                "es": "Aqua",
+                "en": "Aqua"
+            },
+            "start": 2015,
+            "end": 2015,
+            "skills":{
+                "es": "Illustrator",
+                "en": "Illustrator"
+            },
+            "category": {
+                "key": "Course",
+                "es": "Curso",
+                "en": "Course"
+            },
+            "subcategory": {
+                "es": "Software",
+                "en": "Software"
+            },
+            "mode": {
+                "es": "Presencial",
+                "en": "On-site"
+            },
+            "status": {
+                "key": "PUBLISHED"
+            }
+        },
+        {
+            "id": "edu-6",
+            "uid": "english-language",
+            "title": {
+                "es": "Inglés",
+                "en": "English"
+            },
+            "institution": {
+                "es": "Go Idiomas",
+                "en": "Go Idiomas"
+            },
+            "start": 2020,
+            "end": 2021,
+            "skills":{
+                "es": "Illustrator",
+                "en": "Illustrator"
+            },
+            "category": {
+                "key": "Course",
+                "es": "Curso",
+                "en": "Course"
+            },
+            "subcategory": {
+                "es": "Idioma",
+                "en": "Spoken Languages"
+            },
+            "mode": {
+                "es": "Virtual",
+                "en": "Online"
+            },
+            "status": {
+                "key": "PUBLISHED"
+            }
+        },
+        {
+            "id": "edu-7",
+            "uid": "cibersecurity",
+            "title": {
+                "es": "Seguridad Informática - nivel intermedio",
+                "en": "Cybersecurity – Intermediate level"
+            },
+            "institution": {
+                "es": "Universidad Tecnológica Nacional (UTN)",
+                "en": "National Technological University (UTN)"
+            },
+            "start": 2023,
+            "end": 2023,
+            "skills":[
+                {
+                    "es": "Gestores de contraseñas",
+                    "en": "Password managers"
+                },
+                {
+                    "es": "Phishing e ingeniería social",
+                    "en": "Phishing & social engineering"
+                },
+                {
+                    "es": "Autenticación 2FA y biometría",
+                    "en": "2FA & biometrics"
+                },
+                {
+                    "es": "Navegación segura y privacidad web",
+                    "en": "Secure browsing & web privacy"
+                },
+                {
+                    "es": "Seguridad en redes Wi-Fi y móviles",
+                    "en": "Wi-Fi & mobile device security"
+                },
+                {
+                    "es": "Respuesta ante incidentes",
+                    "en": "Incident response"
+                }
+            ],
+            "soft_skills":[
+                {
+                    "es": "Pensamiento crítico",
+                    "en": "Critical thinking"
+                },
+                {
+                    "es": "Conciencia digital",
+                    "en": "Digital awareness"
+                },
+                {
+                    "es": "Resolución de problemas",
+                    "en": "Problem-solving"
+                },
+                {
+                    "es": "Comunicación clara",
+                    "en": "Clear communication"
+                },
+                {
+                    "es": "Toma de decisiones",
+                    "en": "Decision-making"
+                },
+                {
+                    "es": "Adaptabilidad tecnológica",
+                    "en": "Tech adaptability"
+                },
+                {
+                    "es": "Trabajo en equipo",
+                    "en": "Teamwork"
+                }
+            ],
+            "category": {
+                "key": "Course",
+                "es": "Curso",
+                "en": "Course"
+            },
+            "subcategory": {
+                "es": "Especializaciones",
+                "en": "Specializations"
+            },
+            "mode": {
+                "es": "Virtual",
+                "en": "Online"
+            },
+            "status": {
+                "key": "PUBLISHED"
+            }
+        },
+        {
+            "id": "edu-8",
+            "uid": "programming-with-python",
+            "title": {
+                "es": "Introducción a la programación con Python",
+                "en": "Introduction to Programming with Python"
+            },
+            "institution": {
+                "es": "Santander - Open Academy",
+                "en": "Santander - Open Academy"
+            },
+            "start": 2025,
+            "end": 2025,
+            "category": {
+                "key": "Course",
+                "es": "Curso",
+                "en": "Course"
+            },
+            "subcategory": {
+                "es": "Lenguaje",
+                "en": "Languages"
+            },
+            "mode": {
+                "es": "Virtual",
+                "en": "Online"
+            },
+            "status": {
+                "key": "PUBLISHED"
+            }
+        },
+        {
+            "id": "edu-10",
+            "uid": "data-analystic",
+            "title": {
+                "es": "Analisis de Datos",
+                "en": "Data Analystic"
+            },
+            "institution": {
+                "es": "Google Cloud",
+                "en": "Google Cloud"
+            },
+            "start": 2025,
+            "end": 2026,
+            "category": {
+                "key": "Course",
+                "es": "Curso",
+                "en": "Course"
+            },
+            "subcategory": {
+                "es": "Software",
+                "en": "Software"
+            },
+            "mode": {
+                "es": "Virtual",
+                "en": "Online"
+            },
+            "status": {
+                "key": "IN REVIEW"
+            }
+        },
+        {
+            "id": "edu-11",
+            "uid": "microsoft-excel",
+            "title": {
+                "es": "Microsoft Excel 2021",
+                "en": "Microsoft Excel 2021"
+            },
+            "institution": {
+                "es": "Santander - Open Academy",
+                "en": "Santander - Open Academy"
+            },
+            "start": 2025,
+            "end": 2025,
+            "category": {
+                "key": "Course",
+                "es": "Curso",
+                "en": "Course"
+            },
+            "subcategory": {
+                "es": "Software",
+                "en": "Software"
+            },
+            "mode": {
+                "es": "Virtual",
+                "en": "Online"
+            },
+            "status": {
+                "key": "PUBLISHED"
+            }
+        }
+    ],
+    "projects": [
+        {
+            "uid": "te-busco",
+            "title": "Te busco",
+            "description": {
+                "es": "Aplicación web que conecta conductores habilitados con personas con discapacidad que necesitan traslados a Centros de salud y/o rehabilitación.",
+                "en": "Web application that connects licensed drivers with people with disabilities who need transportation to health and/or rehabilitation centers."
+            },
+            "tech": [
+                {
+                    "es": "MongoDB",
+                    "en": "MongoDB"
+                },
+                {
+                    "es": "Node JS",
+                    "en": "Node JS"
+                },
+                {
+                    "es": "React",
+                    "en": "React"
+                }
+            ],
+            "demo_link": "https://tebuscoar.vercel.app",
+            "category": {
+                "key": "Web",
+                "es": "Web",
+                "en": "Web"
+            },
+            "img": "tebusco.jpg",
+            "status": {
+                "key": "PUBLISHED"
+            }
+        },
+        {
+            "id": "project-2",
+            "uid": "tu-mate",
+            "title": "Tu mate",
+            "description": {
+                "es": "E-commerce Full Stack responsive. Incluye experiencia de compra (navegación y carrito) y gestión administrativa completa (CRUD).",
+                "en": "Full Stack Responsive E-commerce. Includes shopping experience (navigation and cart) and complete administrative management (CRUD)."
+            },
+            "tech": [
+                {
+                    "es": "PHP",
+                    "en": "PHP"
+                },
+                {
+                    "es": "MySQL",
+                    "en": "MySQL"
+                },
+                {
+                    "es": "JavaScript",
+                    "en": "JavaScript"
+                },
+                {
+                    "es": "HTML",
+                    "en": "HTML"
+                }                
+            ],
+            "github_link": "https://github.com/solerjulieta/tumate",
+            "category": {
+                "key": "Web",
+                "es": "Diseño Web",
+                "en": "Web Design"
+            },
+            "img": "tumate.jpg",
+            "status": {
+                "key": "PUBLISHED"
+            }
+        },
+        {
+            "id": "project-3",
+            "uid": "creSer",
+            "title": "CreSer",
+            "description": {
+                "es": "Isologotipo diseñado para equipo interdisciplinario y de apoyo a la integración escolar.",
+                "en": "Isologotype created for an interdisciplinary team focused on school integration support."
+            },
+            "category": {
+                "key": "Web",
+                "es": "Diseño Web",
+                "en": "Web Design"
+            },
+            "img": "creSer.jpg",
+            "status": {
+                "key": "PUBLISHED"
+            }
+        },
+        {
+            "id": "project-4",
+            "uid": "1.4f-fotografia",
+            "title": "1.4f Fotografía",
+            "description": {
+                "es": "Logotipo para fotógrafo profesional.",
+                "en": "Logotype for a professional photographer."
+            },
+            "category": {
+                "key": "Web",
+                "es": "Diseño Web",
+                "en": "Web Design"
+            },
+            "img": "1.4f.jpg",
+            "status": {
+                "key": "PUBLISHED"
+            }
+        },
+        {
+            "id": "project-5",
+            "uid": "viro",
+            "title": "Viró",
+            "description": {
+                "es": "Creación de marca y logotipo para venta de productos comestibles y snacks.",
+                "en": "Brand identity and logo design for a business selling food and snacks."
+            },
+            "category": {
+                "key": "Web",
+                "es": "Diseño Web",
+                "en": "Web Design"
+            },
+            "img": "viro.jpg",
+            "status": {
+                "key": "PUBLISHED"
+            }
+        }
+    ]
+}
