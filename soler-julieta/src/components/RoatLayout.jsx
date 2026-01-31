@@ -12,6 +12,11 @@ export default function RoatLayout({ children, toasterPosition })
                 position="top-right"
                 containerClassName={finalClass}
                 fontFamily= "Montserrat, sans-serif"
+                toastOptions={{
+                    style: {
+                        maxWidth: "calc(100vw - 32px)", // 👈 evita overflow horizontal
+                    },
+                }}
             />
         </>
     )

@@ -20,6 +20,8 @@ export default function CVDownloadModal({ isOpen, onClose }) {
     onClose()
   }
 
+  console.log("El rol es", role)
+
   return (
     <BaseModal isOpen={isOpen} onClose={onClose} maxWidth="max-w-lg">
       <Dialog.Title className="text-lg font-bold mb-4">

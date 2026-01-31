@@ -13,7 +13,14 @@ async function getAll()
 {
     await client.connect()
 
-    const projectsList = await projects.find().toArray()
+    const projectsList = await projects.find(
+        {},
+        {
+            projection: {
+                caseStudy: 0
+            }
+        }
+    ).toArray()
 
     const statusIds = []
     const categoryIds = []

@@ -100,7 +100,7 @@ export default function FoundMe()
                 </ul>
                 <hr className="border-t border-gray-300 my-8" />
                 <footer className="text-center mb-8">
-                    <p className="text-sm">&copy; 2025 Julieta Natalí Soler. {t("all_rights")}</p>
+                    <p className="text-sm">&copy; 2026 Julieta Natalí Soler. {t("all_rights")}</p>
                 </footer>
         </CompSection>
         </div>

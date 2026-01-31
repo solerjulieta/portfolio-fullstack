@@ -1,13 +1,12 @@
 import CompSection from './CompSection'
 import CVButton from './CVButton'
 import Subtitle from './Subtitle'
-import CVDownloadModal from './CVDownloadModal'
 import { useTranslation } from 'react-i18next'
 import SocialButtons from './SocialButtons'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
-export default function AboutMe()
+export default function AboutMe({ onDownloadCV })
 {
     const { t } = useTranslation()
     const [isCVModalOpen, setIsCVModalOpen] = useState(false)
@@ -99,15 +98,11 @@ export default function AboutMe()
                                 <CVButton 
                                     txtButton={t("cv_button")} 
                                     className="mb-4 w-40 lg:w-36 transition delay-150 duration-300 ease-in-out hover:scale-[1.02]"
-                                    onClick={() => setIsCVModalOpen(true)} 
+                                    onClick={() => onDownloadCV} 
                                 />
                             </li>
                         </motion.ul>
                     </div>
-                    <CVDownloadModal 
-                        isOpen={isCVModalOpen}
-                        onClose={() => setIsCVModalOpen(false)}
-                    />
                 </motion.div>
         </CompSection>
     )

@@ -6,7 +6,10 @@ import i18n from './js/i18n.js'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import 'primereact/resources/themes/lara-light-blue/theme.css'; // Tema
 import 'primereact/resources/primereact.min.css';              // Core CSS
-import 'primeicons/primeicons.css';    
+import 'primeicons/primeicons.css'; 
+
+/**Public Pages */
+import ProjectDetail from './components/ProjectDetail.jsx'
 
 /**Shared Pages */
 import LoginPage from './pages/shared/LoginPage.jsx'
@@ -26,7 +29,11 @@ import AdminDashboard from './pages/admin/AdminDashboard.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <RoatLayout toasterPosition="mt-[85px]"><App /></RoatLayout>
+    element: <RoatLayout toasterPosition="mt-[50px] md:mt-[85px]"><App /></RoatLayout>
+  },
+  {
+    path: '/project/:id',
+    element: <ProjectDetail />
   },
   {
     path: '/admin/login',
