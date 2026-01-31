@@ -3,8 +3,9 @@ import { useState } from 'react'
 import LanguageButton from './LanguageButton'
 import { ChevronRightIcon } from '@heroicons/react/24/outline'
 import { useTranslation } from 'react-i18next'
+import CVButton from './CVButton'
 
-function CompNavbar()
+function CompNavbar({ onDownloadCV })
 {
     const { t } = useTranslation()
     const { scrollY } = useScroll()
@@ -118,11 +119,13 @@ function CompNavbar()
                     >
                         {liOptions.map((liOption, i) => (
                             liOption.txt === 'menu.cv' ? (
-                                <a
-                                className='download-cv-btn'
-                                >
-                                    <span>{t(liOption.txt)}</span>
-                                </a>
+                                <CVButton
+                                    txtButton={t(liOption.txt)}
+                                    onClick={() => {
+                                        onDownloadCV()
+                                        setIsOpen(false)
+                                    }}
+                                />
                             ) : (
                                 <a
                                     key={i}
