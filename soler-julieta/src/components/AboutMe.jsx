@@ -9,7 +9,6 @@ import { useState } from 'react'
 export default function AboutMe({ onDownloadCV })
 {
     const { t } = useTranslation()
-    const [isCVModalOpen, setIsCVModalOpen] = useState(false)
 
     // 2. Definir las variantes de los elementos hijos (para fade-in y subida)
     const itemVariants = {
@@ -98,7 +97,7 @@ export default function AboutMe({ onDownloadCV })
                                 <CVButton 
                                     txtButton={t("cv_button")} 
                                     className="mb-4 w-40 lg:w-36 transition delay-150 duration-300 ease-in-out hover:scale-[1.02]"
-                                    onClick={() => onDownloadCV} 
+                                    onClick={() => onDownloadCV()} 
                                 />
                             </li>
                         </motion.ul>

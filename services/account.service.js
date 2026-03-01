@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const templatePath = path.resolve(__dirname, '..', 'templates', 'reset-password.html')
-const baseUrl = 'http://localhost:5173'
+const baseUrl = 'https://julieta-soler.vercel.app'
 
 const uri = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017'
 //const client = new MongoClient('mongodb://127.0.0.1:27017')
