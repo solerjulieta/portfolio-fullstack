@@ -23,7 +23,7 @@ function App()
       <MyEducation />
       <MyProjects />
       <ContactMe />
-      <FoundMe />
+      <FoundMe onDownloadCV={() => setIsCVOpen(true)} />
       <CVDownloadModal
         isOpen={isCVOpen}
         onClose={() => setIsCVOpen(false)}
