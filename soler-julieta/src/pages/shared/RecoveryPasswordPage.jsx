@@ -66,7 +66,10 @@ export default function RecoveryPasswordPage()
                     key={formKey}
                     fields={fields}
                     onSubmit={handleRecoveryPassword}
+                    handleSubmit={handleSubmit}
                     schema={recoveryPasswordSchema}
+                    register={register}
+                    errors={errors}
                     txtButton="Confirmar"
                     isLoading={isLoading}
                 />

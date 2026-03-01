@@ -34,8 +34,8 @@ async function login(req, res)
             //Guardo el token en una cookie HTTP-only
             res.cookie("auth_token", token, {
                 httpOnly: true, //Evita que JS en el navegador pueda leerla
-                secure: false, //Solo en HTTPS si esta en prod
-                sameSite: "lax", //Evita CSRF
+                secure: true, //Solo en HTTPS si esta en prod
+                sameSite: "none", //Evita CSRF
                 maxAge: 1000 * 60 * 60 * 24 * 7 //7 días
             })
             //return { token: await tokenService.create(account), account }
