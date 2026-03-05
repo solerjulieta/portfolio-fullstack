@@ -1,15 +1,18 @@
 import { useTranslation } from 'react-i18next'
 import TechTags from './TechTags'
-import { Github, Eye, GithubIcon } from 'lucide-react'
+import { Github, Eye, GithubIcon, ArrowRight } from 'lucide-react'
 import CustomButton from './CustomButton'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import projectEventService from '../services/projectEvent.service'
+import { div } from 'three/src/nodes/math/OperatorNode.js'
 
 export default function ProjectCard({ project, index })
 {
-    const { i18n } = useTranslation()
+    const { i18n, t } = useTranslation()
     const lang = i18n.language?.slice(0,2) || "es"
+
+    console.log("El proyecto que ingresa es", project)
 
     //Crear una referencia para observar el elemento
     //const ref = useRef(null)
@@ -66,7 +69,21 @@ export default function ProjectCard({ project, index })
                                 }}
                             />
                         )}
+                        {}
                     </div>
+                    {project.caseStudy?.enabled && (
+                        <div
+                            className="flex items-center text-mainViolet hover:underline"
+                        >
+                            {t("show_studycase")}
+                        hola? hay alguien aqui con vidaaaaaa?
+                            <ArrowRight 
+                                size={18}
+                                className="transform group-hover:translate-x-1 transition-transform duration-200"
+                            />
+                        </div>
+
+                    )}
                 </div>
             </div>
         </motion.div>
