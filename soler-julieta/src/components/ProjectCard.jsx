@@ -12,8 +12,6 @@ export default function ProjectCard({ project, index })
     const { i18n, t } = useTranslation()
     const lang = i18n.language?.slice(0,2) || "es"
 
-    console.log("El proyecto que ingresa es", project)
-
     //Crear una referencia para observar el elemento
     //const ref = useRef(null)
     //Usar useInView para saber si el elemento es visible
