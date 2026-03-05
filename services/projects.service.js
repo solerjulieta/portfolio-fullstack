@@ -17,7 +17,7 @@ async function getAll()
         {},
         {
             projection: {
-                "caseStudy.enabled": 1
+                "caseStudy.sections": 0
             }
         }
     ).toArray()
