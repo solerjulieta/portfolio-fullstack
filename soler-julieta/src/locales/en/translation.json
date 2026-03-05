@@ -74,5 +74,8 @@
   "dashboard_lang_en": "English",
   "dashboard_lang_es": "Spanish",
   "dashboard_role_dev": "Web Design",
-  "dashboard_role_design": "Graphic Design"
+  "dashboard_role_design": "Graphic Design",
+  "back_projects": "Back to projects",
+  "title_studycase": "Study case of:",
+  "show_studycase": "View case study"
 }

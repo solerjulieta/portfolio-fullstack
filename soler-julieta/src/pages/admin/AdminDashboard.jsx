@@ -114,7 +114,7 @@ export default function AdminDashboard()
         <CompSection className="my-20">
             <h1 className="text-2xl lg:text-4xl">{t("dashboard_title")}</h1>
             <section>
-                <ul className="grid grid-cols-1 gap-2 place-items-center lg:grid-cols-2 lg:gap-6 2xl:grid-cols-4 mt-8">
+                <ul className="grid grid-cols-1 gap-2 place-items-center lg:place-items-stretch lg:grid-cols-2 lg:gap-6 2xl:grid-cols-4 mt-8">
                     {panelInfo?.map((info, i) => (
                         <AdminCard key={i} panelInfo={info} classWidth="w-[300px] lg:w-full" />
                     ))}

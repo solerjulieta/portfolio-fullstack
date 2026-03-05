@@ -6,19 +6,32 @@ import projectsService from '../services/projects.service'
 import { useParams } from 'react-router-dom'
 import i18n from '../js/i18n'
 import ReactMarkDown from 'react-markdown'
-import { Heart, ShieldCheck, Eye, Users } from 'lucide-react'
+import { Heart, ShieldCheck, Eye, Users, Palette, Zap, HandHeart, UsersRound, Aperture, Camera, Sparkles, LayoutGrid, Shuffle, Leaf } from 'lucide-react'
+import BackButton from './BackButton'
+import { useTranslation } from 'react-i18next'
+import ScrollToTop from './ScrollToTop'
 
 export default function ProjectDetail()
 {
     const { id } = useParams()
     const [project, setProject] = useState()
     const lang = i18n.language || 'es'
+    const { t } = useTranslation()
 
     const ICONS = {
         heart: Heart,
         "shield-check": ShieldCheck,
         eye: Eye,
-        users: Users
+        users: Users,
+        diversity: UsersRound,
+        zap: Zap,
+        "hand-heart": HandHeart,
+        aperture: Aperture,
+        camera: Camera,
+        sparkles: Sparkles,
+        "layout-grid": LayoutGrid,
+        shuffle: Shuffle,
+        leaf: Leaf
     }
 
     useEffect(() => {
@@ -30,9 +43,18 @@ export default function ProjectDetail()
     }, [id])
 
     return(
-        <CompSection className="mt-20">
+        <CompSection className="lg:!my-20">
+            <BackButton label={t("back_projects")} />
+
+            <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="block text-sm uppercase tracking-widest text-txtGrey mb-1 mt-12"
+            >
+                {t("title_studycase")}
+            </motion.span>
             <motion.h1
-                className="text-2xl lg:text-4xl mb-5"
+                className="text-2xl lg:text-4xl mb-10"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
             >
@@ -194,7 +216,10 @@ export default function ProjectDetail()
                                             <p
                                                 className="text-lg mb-4 break-words whitespace-pre-wrap max-w-full"
                                                 style={{
-                                                fontFamily: section.typography.fontName,
+                                                fontFamily: sample.weight.includes("caption")
+                                                ? `${section.typography.fontName} Caption`
+                                                : section.typography.fontName,
+                                                //fontFamily: section.typography.fontName,
                                                 fontWeight:
                                                     sample.weight === "regular" ? 400 :
                                                     sample.weight === "medium" ? 500 :
@@ -249,6 +274,7 @@ export default function ProjectDetail()
                     </div>
                 )
             }
+            <ScrollToTop />
         </CompSection>
     )
 
