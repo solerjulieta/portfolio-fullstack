@@ -147,18 +147,22 @@ async function getById(id)
         throw new Error('No existe un proyecto con este ID.')
     }
 
-    const techIds = Array.isArray(project.tech) ? project.tech.map(id => new ObjectId(id)) : []
+    const techIds = Array.isArray(project.tech) 
+        ? project.tech.map(id => new ObjectId(id)) 
+        : [];
 
-    const [techs] = await Promise.all([
-        db.collection('Technologies').find({ _id: { $in: techIds } }).toArray()
-    ])
+    const techs = await db.collection('Technologies')
+        .find({ _id: { $in: techIds } })
+        .toArray()
 
-    const techMap = Object.fromEntries(techs.map(t => [t._id.toString(), t]))
+    const techMap = Object.fromEntries(
+        techs.map(t => [t._id.toString(), t])
+    )
 
     return {
         ...project,
         tech: Array.isArray(project.tech)
-            ? project.tech.map(id => techMap[id.toString()]).filter(Boolean)
+            ? project.tech.map(tId => techMap[tId.toString()]).filter(Boolean)
             : []
     }
 }
