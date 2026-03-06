@@ -153,6 +153,8 @@ async function getById(id)
         db.collection('Technologies').find({ _id: { $in: techIds } }).toArray()
     ])
 
+    const techMap = Object.fromEntries(techs.map(t => [t._id.toString(), t]))
+
     return {
         ...project,
         tech: Array.isArray(project.tech)
