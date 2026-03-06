@@ -10,6 +10,7 @@ import { Heart, ShieldCheck, Eye, Users, Palette, Zap, HandHeart, UsersRound, Ap
 import BackButton from './BackButton'
 import { useTranslation } from 'react-i18next'
 import ScrollToTop from './ScrollToTop'
+import TechTags from './TechTags'
 
 export default function ProjectDetail()
 {
@@ -38,9 +39,10 @@ export default function ProjectDetail()
         projectsService.getById(id)
         .then(data => {
             setProject(data)
-            console.log("El subtitulo es", data.caseStudy.subtitle[lang])
         })
     }, [id])
+
+    console.log("La data del proyecto es", project)
 
     return(
         <CompSection className="lg:!my-20">
@@ -60,6 +62,9 @@ export default function ProjectDetail()
             >
                 {project?.title}
             </motion.h1>
+            {project?.tech && project?.tech.length > 0 && (
+                <TechTags tags={project.tech?.map(t => t[lang])} />
+            )}
             {project?.caseStudy?.enabled && 
                 Array.isArray(project.caseStudy.sections) && (
                     <div className="space-y-16">

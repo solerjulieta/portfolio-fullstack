@@ -16,9 +16,9 @@ const iconMap = {
     "Node.js": SiNodedotjs,
     "Express": SiExpress,
     "MongoDB": SiMongodb,
-    "TailwindCSS": SiTailwindcss,
+    "Tailwind CSS": SiTailwindcss,
     "JavaScript": SiJavascript,
-    "HTML": SiHtml5,
+    "HTML5": SiHtml5,
     "CSS": SiCss3,
     "PHP": SiPhp,
     "MySQL": SiMysql
