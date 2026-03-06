@@ -147,7 +147,18 @@ async function getById(id)
         throw new Error('No existe un proyecto con este ID.')
     }
 
-    return project
+    const techIds = Array.isArray(project.tech) ? project.tech.map(id => new ObjectId(id)) : []
+
+    const [techs] = await Promise.all([
+        db.collection('Technologies').find({ _id: { $in: techIds } }).toArray()
+    ])
+
+    return {
+        ...project,
+        tech: Array.isArray(project.tech)
+            ? project.tech.map(id => techMap[id.toString()]).filter(Boolean)
+            : []
+    }
 }
 
 async function create(project)

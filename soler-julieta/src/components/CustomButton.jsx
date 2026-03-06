@@ -3,7 +3,7 @@ export default function CustomButton({ hRef, className, txt, Icon, target = "_bl
     return(
         <a 
             href={hRef} 
-            className={`mt-4 rounded-md p-2 shadow-md flex items-center justify-center cursor-pointer transition-colors duration-300 ${className}`}
+            className={`rounded-md p-2 shadow-md flex items-center justify-center cursor-pointer transition-colors duration-300 ${className}`}
             target={target}
             onClick={onClick}
         >
