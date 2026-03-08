@@ -18,7 +18,7 @@ async function getTotal(req, res)
 
 async function getByUid(req, res)
 {
-    const uid = req.params.id
+    const uid = req.params.uid
 
     projectsService.getByUid(uid)
         .then(function(project){

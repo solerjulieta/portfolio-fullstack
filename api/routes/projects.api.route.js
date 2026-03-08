@@ -12,8 +12,8 @@ router.route('/projects')
 router.route('/projects/stats')
     .get(projectsApiController.getTotal)
 
-router.route('/project/:id')
-    .get(projectsApiController.getById)
+router.route('/project/:uid')
+    .get(projectsApiController.getByUid)
     .patch([uploadProjectImage.single('img'), processProjectImage], projectsApiController.edit)
     .delete(projectsApiController.deleteProject)
 
