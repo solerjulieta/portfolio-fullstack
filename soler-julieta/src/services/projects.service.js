@@ -48,7 +48,7 @@ export async function deleteProject(id)
 export default{
     getAll,
     getStats,
-    getById, 
+    getByUid, 
     create,
     edit,
     deleteImg,

@@ -62,7 +62,7 @@ export default function ProjectDetail()
             }
 
             try{
-                const apiData = await projectsService.getById(uid)
+                const apiData = await projectsService.getByUid(uid)
                 if(!isMounted) return 
 
                 if(apiData){
@@ -79,7 +79,7 @@ export default function ProjectDetail()
         return () => {
             isMounted = false
         }
-    }, [id])
+    }, [uid])
 
     return(
         <CompSection className="my-12 lg:!my-20">
