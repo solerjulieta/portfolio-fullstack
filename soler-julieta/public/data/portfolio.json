@@ -644,25 +644,25 @@
                                 {
                                     "weight": "regular",
                                     "label": { "es": "Regular", "en": "Regular" },
-                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz\n1234567890.,:;?!$&*()",
                                     "usage": { "es": "Se recomienda utilizar esta variante para textos largos y contenido principal, priorizando la legibilidad y la comodidad de lectura.", "en": "This variant is recommended for long-form text and main content, prioritizing readability and visual comfort." }
                                 },
                                 {
                                     "weight": "medium",
                                     "label": { "es": "Medium", "en": "Medium" },
-                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz\n1234567890.,:;?!$&*()",
                                     "usage": { "es": "Ideal para reforzar jerarquías dentro del texto y destacar información sin perder claridad ni coherencia visual.", "en": "Ideal for reinforcing hierarchy within text and highlighting information while maintaining clarity and visual consistency." }
                                 },
                                 {
                                     "weight": "semibold",
                                     "label": { "es": "SemiBold", "en": "SemiBold" },
-                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz\n1234567890.,:;?!$&*()",
                                     "usage": { "es": "Pensada para títulos y encabezados, aporta presencia visual y dirige la atención hacia los elementos clave de la interfaz.", "en": "Designed for titles and headings, it adds visual presence and directs attention to key interface elements." }
                                 },
                                 {
                                     "weight": "bold",
                                     "label": { "es": "Bold", "en": "Bold" },
-                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz\n1234567890.,:;?!$&*()",
                                     "usage": { "es": "Se utiliza para resaltar palabras o mensajes prioritarios, generando énfasis y reforzando el impacto visual.", "en": "Used to highlight key words or priority messages, creating emphasis and reinforcing visual impact." }
                                 }
                             ]
@@ -1156,7 +1156,7 @@
                                 {
                                     "weight": "bold caption",
                                     "label": { "es": "Bold Caption", "en": "Bold Caption" },
-                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()"
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz\n1234567890.,:;?!$&*()"
                                 }
                             ]
                         }

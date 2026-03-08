@@ -60,14 +60,6 @@ export default function MyProjects()
         return json.projects || []
     }
 
-    async function loadProjectsSnapshot() {
-        const res = await fetch('/data/portfolio.json')
-        if (!res.ok) throw new Error('Snapshot not found')
-
-        const json = await res.json()
-        return json.projects || []
-    }
-
     function publishOnly(data) {
         return data.filter(item => item.status?.key === "PUBLISHED")
     }

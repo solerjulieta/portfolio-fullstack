@@ -141,7 +141,7 @@ async function getByUid(uid)
 {
     await client.connect()
 
-    const project = await projects.findOne({ uid: new ObjectId(uid) })
+    const project = await projects.findOne({ uid: uid })
 
     if(!project){
         throw new Error('No existe un proyecto con este ID.')
