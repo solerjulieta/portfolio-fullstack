@@ -16,11 +16,11 @@ async function getTotal(req, res)
         })
 }
 
-async function getById(req, res)
+async function getByUid(req, res)
 {
-    const id = req.params.id
+    const uid = req.params.id
 
-    projectsService.getById(id)
+    projectsService.getByUid(uid)
         .then(function(project){
             if(project){
                 res.status(200).json(project)
@@ -150,7 +150,7 @@ async function deleteProject(req, res)
 
 export{
     getAll,
-    getById,
+    getByUid,
     create,
     edit,
     deleteImg,

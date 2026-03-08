@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import TechTags from './TechTags'
-import { Github, Eye, GithubIcon, ArrowRight } from 'lucide-react'
+import { Github, MonitorPlay, ArrowRight } from 'lucide-react'
 import CustomButton from './CustomButton'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
@@ -32,11 +32,9 @@ export default function ProjectCard({ project, index })
         registerEvent("project_view")
 
         if(project.caseStudy?.enabled){
-            navigate(`/project/${project._id}`)
+            navigate(`/project/${project.uid}`)
         }
     }
-
-    console.log("Los proyectos que vienen son", project)
 
     return(
         <motion.div 
@@ -58,7 +56,7 @@ export default function ProjectCard({ project, index })
                             <CustomButton 
                                 hRef={project.demo_link}
                                 txt="Demo"
-                                Icon={Eye}
+                                Icon={MonitorPlay}
                                 className="bg-mainViolet text-white hover:bg-darkViolet"
                                 onClick={(e) => {
                                     e.stopPropagation()

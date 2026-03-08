@@ -6,15 +6,17 @@ import projectsService from '../services/projects.service'
 import { useParams } from 'react-router-dom'
 import i18n from '../js/i18n'
 import ReactMarkDown from 'react-markdown'
-import { Heart, ShieldCheck, Eye, Users, Palette, Zap, HandHeart, UsersRound, Aperture, Camera, Sparkles, LayoutGrid, Shuffle, Leaf } from 'lucide-react'
+import { Heart, ShieldCheck, Eye, Users, Palette, Zap, HandHeart, UsersRound, Aperture, Camera, Sparkles, LayoutGrid, Shuffle, Leaf, Github } from 'lucide-react'
 import BackButton from './BackButton'
 import { useTranslation } from 'react-i18next'
 import ScrollToTop from './ScrollToTop'
 import TechTags from './TechTags'
+import CustomButton from './CustomButton'
+import { MonitorPlay } from 'lucide-react'
 
 export default function ProjectDetail()
 {
-    const { id } = useParams()
+    const { uid } = useParams()
     const [project, setProject] = useState()
     const lang = i18n.language || 'es'
     const { t } = useTranslation()
@@ -35,36 +37,94 @@ export default function ProjectDetail()
         leaf: Leaf
     }
 
+    async function loadProjectSnapshot(uid){
+        const res = await fetch('/data/portfolio.json')
+        if(!res.ok) throw new Error('Snapshot not found')
+        
+        const json = await res.json()
+        return json.projects?.find(p => p.uid == uid || p.uid == uid) 
+    }
+
     useEffect(() => {
-        projectsService.getById(id)
-        .then(data => {
-            setProject(data)
-        })
+        let isMounted = true
+
+        async function loadData(){
+            try{
+                const snapshot = await loadProjectSnapshot(uid)
+                if(!isMounted) return
+
+                if(snapshot){
+                    setProject(snapshot)
+                    console.log("Datos del proyecto desde JSOn")
+                }
+            } catch (err){
+                console.warn("No se pudo cargar el snapshot del proyecto", err)
+            }
+
+            try{
+                const apiData = await projectsService.getById(uid)
+                if(!isMounted) return 
+
+                if(apiData){
+                    setProject(apiData)
+                    console.log("Datos actualizados desde la API")
+                }
+            } catch (err) {
+                console.warn("La API falló")
+            }
+        }
+
+        loadData()
+
+        return () => {
+            isMounted = false
+        }
     }, [id])
 
-    console.log("La data del proyecto es", project)
-
     return(
-        <CompSection className="lg:!my-20">
+        <CompSection className="my-12 lg:!my-20">
             <BackButton label={t("back_projects")} />
-
-            <motion.span
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="block text-sm uppercase tracking-widest text-txtGrey mb-1 mt-12"
-            >
-                {t("title_studycase")}
-            </motion.span>
-            <motion.h1
-                className="text-2xl lg:text-4xl mb-10"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-            >
-                {project?.title}
-            </motion.h1>
-            {project?.tech && project?.tech.length > 0 && (
-                <TechTags tags={project.tech?.map(t => t[lang])} />
-            )}
+            <motion.div className="flex flex-col lg:flex-row lg:justify-between mt-12">
+                <motion.div>
+                    <motion.span
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        className="block text-sm uppercase tracking-widest text-txtGrey mb-1"
+                    >
+                        {t("title_studycase")}
+                    </motion.span>
+                    <motion.h1
+                        className="text-2xl lg:text-4xl mb-2"
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                    >
+                        {project?.title}
+                    </motion.h1>
+                    {project?.tech && project?.tech.length > 0 && (
+                        <TechTags tags={project.tech?.map(t => t[lang])} className="mb-2 lg:mb-10" />
+                    )}
+                </motion.div>
+                {(!!project?.demo_link || !!project?.github_link) && (
+                    <motion.div className="mb-10">
+                        {project?.demo_link && (
+                            <CustomButton 
+                                hRef={project.demo_link}
+                                txt="Demo"
+                                Icon={MonitorPlay}
+                                className="bg-mainViolet text-white hover:bg-darkViolet"
+                            />
+                        )}
+                        {project?.github_link && (
+                            <CustomButton 
+                                hRef={project.github_link}
+                                txt="Github"
+                                Icon={Github}
+                                className="border-2 border-mainViolet/10 text-mainViolet hover:border-darkViolet hover:text-darkViolet"
+                            />
+                        )}
+                    </motion.div>
+                )}
+            </motion.div>
             {project?.caseStudy?.enabled && 
                 Array.isArray(project.caseStudy.sections) && (
                     <div className="space-y-16">

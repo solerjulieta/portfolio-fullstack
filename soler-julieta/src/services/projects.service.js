@@ -10,9 +10,9 @@ export async function getStats()
     return API.call({ uri: 'projects/stats' })
 }
 
-export async function getById(id)
+export async function getByUid(uid)
 {
-    return API.call({ uri: `project/${id}` })
+    return API.call({ uri: `project/${uid}` })
 }
 
 export async function create(formData)

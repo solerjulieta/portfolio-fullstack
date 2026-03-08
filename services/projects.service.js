@@ -137,11 +137,11 @@ async function getTotal()
     return totals
 }
 
-async function getById(id)
+async function getByUid(uid)
 {
     await client.connect()
 
-    const project = await projects.findOne({ _id: new ObjectId(id) })
+    const project = await projects.findOne({ uid: new ObjectId(uid) })
 
     if(!project){
         throw new Error('No existe un proyecto con este ID.')
@@ -355,7 +355,7 @@ async function deleteProject(id)
 export{
     getAll,
     getTotal,
-    getById,
+    getByUid,
     create,
     edit,
     deleteImg,

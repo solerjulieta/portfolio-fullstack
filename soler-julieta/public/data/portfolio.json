@@ -534,6 +534,141 @@
             "img": "tebusco.jpg",
             "status": {
                 "key": "PUBLISHED"
+            },
+            "caseStudy": {
+                "enabled": true,
+                "sections": [
+                    {
+                        "order": 1,
+                        "key": "brand",
+                        "subtitle": { "es": "Marca" , "en": "Brand" },
+                        "title": { "es": "Donde empieza la identidad", "en": "Where identity takes shape" },
+                        "body": { "es": "Te busco es una aplicación mobile creada para **ayudar** y **facilitar la vida de las personas**.\n\n Conecta a familias con niños, niñas y adolescentes con discapacidad con conductores habilitados, **reduciendo la búsqueda, el esfuerzo y la incertidumbre**, y **sumando seguridad, inclusión y acompañamiento** real en cada búsqueda.\n\nLa marca nace de un doble significado que define su esencia:\n\n **“Te busco”**, la acción de la familia al buscar un conductor. \n\n**“Te busco”**, la acción del conductor al confirmar que ese viaje ya está en buenas manos.", "en": "Te Busco is a mobile application created to **help and improve people's lives**.\n\nIt connects families of children and adolescents with disabilities with authorized drivers, **reducing search time, effort, and uncertainty**. Our platform brings **safety, inclusion, and genuine support to every journey**.\n\nThe brand's name carries a dual meaning that defines its essence:\n\n'Te busco' (I am looking for you): The action taken by a family searching for a driver.\n\n'Te busco' (I am coming for you): The driver's commitment, confirming that the trip is now in good hands." }
+                    },
+                    {
+                        "order": 2,
+                        "key": "logo",
+                        "subtitle": { "es": "Isologo", "en": "Logomark" },
+                        "title": { "es": "Cuando la marca se vuelve forma", "en": "When the brand takes shape" },
+                        "body": { "es": "El isologo nace a partir de la esencia de la marca y de lo que buscamos transmitir en cada interacción.\n\n Su construcción parte de la idea de representar a ambos públicos y sus acciones dentro de la aplicación: la familia que busca, y el conductor que responde. \n\n A través de la letra “t” y el semicírculo se simboliza la discapacidad y, al mismo tiempo, la figura de una persona al volante. \n\n La letra “o” también fue intervenida: en su contraforma se revela una lupa, que representa la búsqueda, el encuentro y la confianza en cada viaje.", "en": "The isologo is born from the essence of the brand and what we aim to convey in every interaction.\n\nIts design is built around the idea of representing both audiences and their actions within the app: the family who searches, and the driver who responds.\n\nThrough the letter “t” and the semicircle, we symbolize disability and, at the same time, the figure of a person behind the wheel.\n\nThe letter “o” is also reimagined: within its counterform, a magnifying glass is revealed, representing the search, the connection, and the trust behind every journey." },
+                        "media": [
+                            {
+                                "type": "image",
+                                "src": "isologo-tebusco.jpg",
+                                "alt": "Isologotipo de te busco",
+                                "role": "hero"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "key": "coloer",
+                        "subtitle": { "es": "Color", "en": "Color" },
+                        "title": { "es": "Donde la emoción toma color", "en": "Where emotion takes color" },
+                        "body": { "es": "A través del color se construye una narrativa visual que refuerza los valores y objetivos de la marca. \n\nLa paleta elegida busca transmitir una sensación de **tranquilidad y seguridad**, generando un entorno de **confianza** en cada interacción. Al mismo tiempo, los matices y contrastes expresan **progreso y dinamismo**, reflejando el crecimiento constante del proyecto y su capacidad de adaptación. Finalmente, los tonos más cálidos aportan una dimensión emocional, evocando amor y afecto, y fortaleciendo el vínculo entre la marca y las personas que la utilizan.", "en": "Through color, a visual narrative is built to reinforce the brand’s values and objectives. \n\nThe chosen palette aims to convey a sense of **calm and security**, creating an environment of **trust** in every interaction. At the same time, the interplay of tones and contrasts expresses **progress and dynamism**, reflecting the project’s continuous growth and ability to evolve. Finally, warmer hues add an emotional layer, evoking love and care, and strengthening the bond between the brand and the people who engage with it." },
+                        "palette": {
+                            "primary": {
+                                "label": {
+                                    "es": "Color principal",
+                                    "en": "Primary color"
+                                },
+                                "name": {
+                                    "es": "Cerulean Blue",
+                                    "en": "Cerulean Blue"
+                                },
+                                "hex": "#0066CC",
+                                "rgb": "0, 102, 204",
+                                "hsl": "210°, 100%, 40%"
+                            },
+                            "secondaryLabel": {
+                                "es": "Colores secundarios",
+                                "en": "Secondary colors"
+                            },
+                            "secondary": [
+                                {
+                                    "name": { "es": "Light Azure", "en": "Light Azure" },
+                                    "hex": "#3399FF",
+                                    "rgb": "51, 153, 255",
+                                    "hsl": "210°, 100%, 60%"
+                                },
+                                {
+                                    "name": { "es": "Navy Blue", "en": "Navy Blue" },
+                                    "hex": "#003366",
+                                    "rgb": "0, 51, 102",
+                                    "hsl": "210°, 100%, 20%"
+                                },
+                                {
+                                    "name": { "es": "Blue Violet", "en": "Blue Violet" },
+                                    "hex": "#6633FF",
+                                    "rgb": "102, 51, 255",
+                                    "hsl": "255°, 100%, 60%"
+                                },
+                                {
+                                    "name": { "es": "Amethyst Purple", "en": "Amethyst Purple" },
+                                    "hex": "#9933CC",
+                                    "rgb": "153, 51, 204",
+                                    "hsl": "280°, 60%, 50%"
+                                }
+                            ]
+                        },
+                        "principles": {
+                            "label": { "es": "Principios del color", "en": "Principles color" },
+                            "items": [
+                                {
+                                    "icon": "shield-check",
+                                    "title": { "es": "Seguridad", "en": "Security" },
+                                    "description": { "es": "El uso del color refuerza la claridad y la transparencia, comunicando que cada interacción se da dentro de un entorno verificado y confiable.", "en": "The use of color reinforces clarity and transparency, communicating that every interaction takes place within a verified and trustworthy environment." }
+                                },
+                                {
+                                    "icon": "eye",
+                                    "title": { "es": "Confianza", "en": "Trust" },
+                                    "description": { "es": "La consistencia cromática construye una identidad reconocible que acompaña al usuario y fortalece la confianza en cada decisión.", "en": "Chromatic consistency builds a recognizable identity that supports users and strengthens trust in every decision." }
+                                },
+                                {
+                                    "icon": "users",
+                                    "title": { "es": "Inclusión", "en": "Inclusion" },
+                                    "description": { "es": "El sistema visual se diseña para ser accesible y empático, promoviendo una experiencia clara, legible y abierta a todas las personas.", "en": "The visual system is designed to be accessible and empathetic, promoting a clear, legible, and open experience for everyone." }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "order": 4,
+                        "key": "typo",
+                        "subtitle": { "es": "Tipografía", "en": "Typography" },
+                        "title": { "es": "Donde nace la voz de la marca", "en": "Where the brand’s voice begins" },
+                        "body": { "es": "La tipografía es una extensión de la personalidad de la marca. A través de sus formas y ritmos construye una voz visual clara y cercana, que guía la lectura y refuerza la confianza en cada interacción. Sus trazos transmiten **legibilidad, amistad, flexibilidad y modernidad**, asegurando una experiencia coherente y accesible en todos los puntos de contacto.", "en": "Typography is an extension of the brand’s personality. Through its shapes and rhythms, it builds a clear and approachable visual voice that guides reading and reinforces trust in every interaction. Its strokes convey **legibility, friendliness, flexibility, and modernity**, ensuring a coherent and accessible experience across all touchpoints." },
+                        "typography": {
+                            "fontName": "Dosis",
+                            "samples": [
+                                {
+                                    "weight": "regular",
+                                    "label": { "es": "Regular", "en": "Regular" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Se recomienda utilizar esta variante para textos largos y contenido principal, priorizando la legibilidad y la comodidad de lectura.", "en": "This variant is recommended for long-form text and main content, prioritizing readability and visual comfort." }
+                                },
+                                {
+                                    "weight": "medium",
+                                    "label": { "es": "Medium", "en": "Medium" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Ideal para reforzar jerarquías dentro del texto y destacar información sin perder claridad ni coherencia visual.", "en": "Ideal for reinforcing hierarchy within text and highlighting information while maintaining clarity and visual consistency." }
+                                },
+                                {
+                                    "weight": "semibold",
+                                    "label": { "es": "SemiBold", "en": "SemiBold" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Pensada para títulos y encabezados, aporta presencia visual y dirige la atención hacia los elementos clave de la interfaz.", "en": "Designed for titles and headings, it adds visual presence and directs attention to key interface elements." }
+                                },
+                                {
+                                    "weight": "bold",
+                                    "label": { "es": "Bold", "en": "Bold" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Se utiliza para resaltar palabras o mensajes prioritarios, generando énfasis y reforzando el impacto visual.", "en": "Used to highlight key words or priority messages, creating emphasis and reinforcing visual impact." }
+                                }
+                            ]
+                        }
+                    }
+                ]
             }
         },
         {
@@ -571,6 +706,141 @@
             "img": "tumate.jpg",
             "status": {
                 "key": "PUBLISHED"
+            },
+            "caseStudy": {
+                "enabled": false,
+                "sections": [
+                    {
+                        "order": 1,
+                        "key": "brand",
+                        "subtitle": { "es": "Marca" , "en": "Brand" },
+                        "title": { "es": "Donde empieza la identidad", "en": "Where identity takes shape" },
+                        "body": { "es": "Esta marca nace como una solución digital para conectar personas con movilidad reducida con conductores licenciados, priorizando accesibilidad, confianza y experiencia de uso.", "en": "This brand was created as a digital solution to connect people with reduced mobility with licensed drivers, prioritizing accessibility, trust, and user experience." }
+                    },
+                    {
+                        "order": 2,
+                        "key": "logo",
+                        "subtitle": { "es": "Isologo", "en": "Logomark" },
+                        "title": { "es": "Cuando la marca se vuelve forma", "en": "When the brand takes shape" },
+                        "body": { "es": "El isologo nace a partir de la esencia de la marca y de lo que buscamos transmitir en cada interacción.\n\n Su construcción parte de la idea de representar a ambos públicos y sus acciones dentro de la aplicación: la familia que busca, y el conductor que responde. \n\n A través de la letra “t” y el semicírculo se simboliza la discapacidad y, al mismo tiempo, la figura de una persona al volante. \n\n La letra “o” también fue intervenida: en su contraforma se revela una lupa, que representa la búsqueda, el encuentro y la confianza en cada viaje.", "en": "The isologo is born from the essence of the brand and what we aim to convey in every interaction.\n\nIts design is built around the idea of representing both audiences and their actions within the app: the family who searches, and the driver who responds.\n\nThrough the letter “t” and the semicircle, we symbolize disability and, at the same time, the figure of a person behind the wheel.\n\nThe letter “o” is also reimagined: within its counterform, a magnifying glass is revealed, representing the search, the connection, and the trust behind every journey." },
+                        "media": [
+                            {
+                                "type": "image",
+                                "src": "isologo-tebusco.jpg",
+                                "alt": "Isologotipo de te busco",
+                                "role": "hero"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "key": "coloer",
+                        "subtitle": { "es": "Color", "en": "Color" },
+                        "title": { "es": "Donde la emoción toma color", "en": "Where emotion takes color" },
+                        "body": { "es": "A través del color se construye una narrativa visual que refuerza los valores y objetivos de la marca. \n\nLa paleta elegida busca transmitir una sensación de **tranquilidad y seguridad**, generando un entorno de **confianza** en cada interacción. Al mismo tiempo, los matices y contrastes expresan **progreso y dinamismo**, reflejando el crecimiento constante del proyecto y su capacidad de adaptación. Finalmente, los tonos más cálidos aportan una dimensión emocional, evocando amor y afecto, y fortaleciendo el vínculo entre la marca y las personas que la utilizan.", "en": "Through color, a visual narrative is built to reinforce the brand’s values and objectives. \n\nThe chosen palette aims to convey a sense of **calm and security**, creating an environment of **trust** in every interaction. At the same time, the interplay of tones and contrasts expresses **progress and dynamism**, reflecting the project’s continuous growth and ability to evolve. Finally, warmer hues add an emotional layer, evoking love and care, and strengthening the bond between the brand and the people who engage with it." },
+                        "palette": {
+                            "primary": {
+                                "label": {
+                                    "es": "Color principal",
+                                    "en": "Primary color"
+                                },
+                                "name": {
+                                    "es": "Cerulean Blue",
+                                    "en": "Cerulean Blue"
+                                },
+                                "hex": "#0066CC",
+                                "rgb": "0, 102, 204",
+                                "hsl": "210°, 100%, 40%"
+                            },
+                            "secondaryLabel": {
+                                "es": "Colores secundarios",
+                                "en": "Secondary colors"
+                            },
+                            "secondary": [
+                                {
+                                    "name": { "es": "Light Azure", "en": "Light Azure" },
+                                    "hex": "#3399FF",
+                                    "rgb": "51, 153, 255",
+                                    "hsl": "210°, 100%, 60%"
+                                },
+                                {
+                                    "name": { "es": "Navy Blue", "en": "Navy Blue" },
+                                    "hex": "#003366",
+                                    "rgb": "0, 51, 102",
+                                    "hsl": "210°, 100%, 20%"
+                                },
+                                {
+                                    "name": { "es": "Blue Violet", "en": "Blue Violet" },
+                                    "hex": "#6633FF",
+                                    "rgb": "102, 51, 255",
+                                    "hsl": "255°, 100%, 60%"
+                                },
+                                {
+                                    "name": { "es": "Amethyst Purple", "en": "Amethyst Purple" },
+                                    "hex": "#9933CC",
+                                    "rgb": "153, 51, 204",
+                                    "hsl": "280°, 60%, 50%"
+                                }
+                            ]
+                        },
+                        "principles": {
+                            "label": { "es": "Principios del color", "en": "Principles color" },
+                            "items": [
+                                {
+                                    "icon": "shield-check",
+                                    "title": { "es": "Seguridad", "en": "Security" },
+                                    "description": { "es": "El uso del color refuerza la claridad y la transparencia, comunicando que cada interacción se da dentro de un entorno verificado y confiable.", "en": "The use of color reinforces clarity and transparency, communicating that every interaction takes place within a verified and trustworthy environment." }
+                                },
+                                {
+                                    "icon": "eye",
+                                    "title": { "es": "Confianza", "en": "Trust" },
+                                    "description": { "es": "La consistencia cromática construye una identidad reconocible que acompaña al usuario y fortalece la confianza en cada decisión.", "en": "Chromatic consistency builds a recognizable identity that supports users and strengthens trust in every decision." }
+                                },
+                                {
+                                    "icon": "users",
+                                    "title": { "es": "Inclusión", "en": "Inclusion" },
+                                    "description": { "es": "El sistema visual se diseña para ser accesible y empático, promoviendo una experiencia clara, legible y abierta a todas las personas.", "en": "The visual system is designed to be accessible and empathetic, promoting a clear, legible, and open experience for everyone." }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "order": 4,
+                        "key": "typo",
+                        "subtitle": { "es": "Tipografía", "en": "Typography" },
+                        "title": { "es": "Donde nace la voz de la marca", "en": "Where the brand’s voice begins" },
+                        "body": { "es": "La tipografía es una extensión de la personalidad de la marca. A través de sus formas y ritmos construye una voz visual clara y cercana, que guía la lectura y refuerza la confianza en cada interacción. Sus trazos transmiten **legibilidad, amistad, flexibilidad y modernidad**, asegurando una experiencia coherente y accesible en todos los puntos de contacto.", "en": "Typography is an extension of the brand’s personality. Through its shapes and rhythms, it builds a clear and approachable visual voice that guides reading and reinforces trust in every interaction. Its strokes convey **legibility, friendliness, flexibility, and modernity**, ensuring a coherent and accessible experience across all touchpoints." },
+                        "typography": {
+                            "fontName": "Dosis",
+                            "samples": [
+                                {
+                                    "weight": "regular",
+                                    "label": { "es": "Regular", "en": "Regular" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Se recomienda utilizar esta variante para textos largos y contenido principal, priorizando la legibilidad y la comodidad de lectura.", "en": "This variant is recommended for long-form text and main content, prioritizing readability and visual comfort." }
+                                },
+                                {
+                                    "weight": "medium",
+                                    "label": { "es": "Medium", "en": "Medium" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Ideal para reforzar jerarquías dentro del texto y destacar información sin perder claridad ni coherencia visual.", "en": "Ideal for reinforcing hierarchy within text and highlighting information while maintaining clarity and visual consistency." }
+                                },
+                                {
+                                    "weight": "semibold",
+                                    "label": { "es": "SemiBold", "en": "SemiBold" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Pensada para títulos y encabezados, aporta presencia visual y dirige la atención hacia los elementos clave de la interfaz.", "en": "Designed for titles and headings, it adds visual presence and directs attention to key interface elements." }
+                                },
+                                {
+                                    "weight": "bold",
+                                    "label": { "es": "Bold", "en": "Bold" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Se utiliza para resaltar palabras o mensajes prioritarios, generando énfasis y reforzando el impacto visual.", "en": "Used to highlight key words or priority messages, creating emphasis and reinforcing visual impact." }
+                                }
+                            ]
+                        }
+                    }
+                ]
             }
         },
         {
@@ -589,6 +859,111 @@
             "img": "creSer.jpg",
             "status": {
                 "key": "PUBLISHED"
+            },
+            "tech": [
+                {
+                    "es": "Branding",
+                    "en": "Branding"
+                },
+                {
+                    "es": "Identidad Visual",
+                    "en": "Visual Identity"
+                },
+                {
+                    "es": "Illustrator",
+                    "en": "Illustrator"
+                }
+            ],
+            "caseStudy": {
+                "enabled": true,
+                "sections": [
+                    {
+                        "order": 1,
+                        "key": "brand",
+                        "subtitle": { "es": "Marca" , "en": "Brand" },
+                        "title": { "es": "Donde empieza la identidad", "en": "Where identity takes shape" },
+                        "body": { "es": "CreSer es un equipo interdisciplinario que nace para transformar el apoyo a la integración escolar. A través de la psicología, psicopedagogía y psicomotricidad, su misión es brindar las herramientas necesarias para que cada niño y adolescente pueda habitar el ámbito educativo con **autonomía y seguridad**.\n\nLa marca es un reflejo de este compromiso: una identidad diseñada para transmitir que, con el apoyo adecuado, **el desarrollo personal no tiene límites.**", "en": "CreSer is an interdisciplinary team born to transform school integration support. Through psychology, psychopedagogy, and psychomotor therapy, their mission is to provide the necessary tools so that every child and adolescent can navigate the educational environment with **autonomy and confidence.**\n\nThe brand is a reflection of this commitment: an identity designed to convey that, with the right support, **there are no limits to personal development.**" }
+                    },
+                    {
+                        "order": 2,
+                        "key": "logo",
+                        "subtitle": { "es": "Isologo", "en": "Logomark" },
+                        "title": { "es": "Cuando la marca se vuelve forma", "en": "When the brand takes shape" },
+                        "body": { "es": "El isologo nace de la esencia misma del proyecto: la libertad de evolucionar. Su construcción se centra en la idea del despliegue individual, representando el recorrido de cada niño y adolescente dentro del sistema educativo.\n\nA través de la figura de un **ave en pleno ascenso**, el logo simboliza la superación de barreras y la belleza del crecimiento propio. Los trazos fluidos y orgánicos son intencionales; reflejan la **flexibilidad y adaptabilidad** inherentes al acompañamiento interdisciplinario, alejándose de estructuras rígidas para abrazar la singularidad de cada estudiante.", "en": "The isotype is born from the very essence of the project: the freedom to evolve. Its construction centers on the idea of individual unfolding, representing the journey of every child and adolescent within the educational system.\n\nThrough the figure of a **bird in mid-ascent**, the logo symbolizes the act of overcoming barriers and the beauty of personal growth. The fluid, organic strokes are intentional; they reflect the **flexibility and adaptability** inherent in interdisciplinary support, moving away from rigid structures to embrace the uniqueness of every student." },
+                        "media": [
+                            {
+                                "type": "image",
+                                "src": "isologo-creSer.jpg",
+                                "alt": "Isologotipo de creSer",
+                                "role": "hero"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "key": "color",
+                        "subtitle": { "es": "Color", "en": "Color" },
+                        "title": { "es": "Donde la emoción toma color", "en": "Where emotion takes color" },
+                        "body": { "es": "A través del color construimos una narrativa visual que celebra la **neurodiversidad**. La paleta elegida huye de lo monocromático para expresar que la integración es un camino multifacético y vibrante.\n\nLa combinación de tonos cálidos y fríos busca equilibrar la **vitalidad del crecimiento** con la **serenidad del espacio clínico**. Estos matices orgánicos refuerzan una identidad empática y humana, transformando la percepción del apoyo escolar en una experiencia positiva y llena de vida.", "en": "Through color, we build a visual narrative that celebrates **neurodiversity**. The chosen palette moves away from the monochromatic to express that integration is a multifaceted, vibrant path.\n\nThe combination of warm and cool tones seeks to balance the **vitality of growth** with the **serenity of the clinical space**. These organic nuances reinforce an empathetic and human identity, transforming the perception of school support into a positive, life-filled experience." },
+                        "palette": [ "#2563EB", "#22C55E", "#F59E0B" ],
+                        "principles": {
+                            "label": { "es": "Principios del color", "en": "Principles color" },
+                            "items": [
+                                {
+                                    "icon": "diversity",
+                                    "title": { "es": "Diversidad", "en": "Diversity" },
+                                    "description": { "es": "El uso de múltiples tonos representa la unión de las diferentes disciplinas que trabajan por un mismo fin.", "en": "The use of multiple shades represents the union of different disciplines working toward a single goal." }
+                                },
+                                {
+                                    "icon": "zap",
+                                    "title": { "es": "Dinamismo", "en": "Dynamism" },
+                                    "description": { "es": "Los degradados y contrastes sugieren movimiento, reflejando el progreso constante y el 'vuelo' de cada alumno.", "en": "Gradients and contrasts suggest movement, reflecting constant progress and each student's unique 'flight'." }
+                                },
+                                {
+                                    "icon": "hand-heart",
+                                    "title": { "es": "Cercanía", "en": "Closeness" },
+                                    "description": { "es": "Una selección cromática amable que reduce la distancia con la familia, generando un entorno de confianza.", "en": "A friendly chromatic selection that bridges the gap with families, fostering an environment of trust." }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "order": 4,
+                        "key": "typo",
+                        "subtitle": { "es": "Tipografía", "en": "Typography" },
+                        "title": { "es": "Donde nace la voz de la marca", "en": "Where the brand’s voice begins" },
+                        "body": { "es": "La tipografía es una extensión de la personalidad de CreSer. El juego visual dentro del naming —resaltando la 'S'— refuerza el concepto central: para poder **crecer**, primero hay que validar el **ser**.\n\nSus formas redondeadas y gestuales construyen una voz visual **clara, acogedora y cercana**. Los trazos transmiten legibilidad y modernidad, asegurando que la comunicación sea profesional pero mantenga siempre el componente afectivo que define al equipo.", "en": "The typography is an extension of CreSer’s personality. The visual play within the naming—highlighting the 'S'—reinforces the core concept: **to grow** (crecer), one must first validate the **being** (ser).\n\nIts rounded, gestural forms construct a visual voice that is **clear, welcoming, and approachable**. The strokes convey legibility and modernity, ensuring that communication remains professional while maintaining the deep affective bond that defines the team." },
+                        "typography": {
+                            "fontName": "",
+                            "samples": [
+                                {
+                                    "weight": "regular",
+                                    "label": { "es": "Regular", "en": "Regular" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Se recomienda utilizar esta variante para textos largos y contenido principal, priorizando la legibilidad y la comodidad de lectura.", "en": "This variant is recommended for long-form text and main content, prioritizing readability and visual comfort." }
+                                },
+                                {
+                                    "weight": "medium",
+                                    "label": { "es": "Medium", "en": "Medium" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Ideal para reforzar jerarquías dentro del texto y destacar información sin perder claridad ni coherencia visual.", "en": "Ideal for reinforcing hierarchy within text and highlighting information while maintaining clarity and visual consistency." }
+                                },
+                                {
+                                    "weight": "semibold",
+                                    "label": { "es": "SemiBold", "en": "SemiBold" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Pensada para títulos y encabezados, aporta presencia visual y dirige la atención hacia los elementos clave de la interfaz.", "en": "Designed for titles and headings, it adds visual presence and directs attention to key interface elements." }
+                                },
+                                {
+                                    "weight": "bold",
+                                    "label": { "es": "Bold", "en": "Bold" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Se utiliza para resaltar palabras o mensajes prioritarios, generando énfasis y reforzando el impacto visual.", "en": "Used to highlight key words or priority messages, creating emphasis and reinforcing visual impact." }
+                                }
+                            ]
+                        }
+                    }
+                ]
             }
         },
         {
@@ -607,6 +982,78 @@
             "img": "1.4f.jpg",
             "status": {
                 "key": "PUBLISHED"
+            },
+             "tech": [
+                {
+                    "es": "Branding",
+                    "en": "Branding"
+                },
+                {
+                    "es": "Illustrator",
+                    "en": "Illustrator"
+                }
+            ],
+            "caseStudy": {
+                "enabled": true,
+                "sections": [
+                    {
+                        "order": 1,
+                        "key": "brand",
+                        "subtitle": { "es": "Marca" , "en": "Brand" },
+                        "title": { "es": "Donde empieza la identidad", "en": "Where identity takes shape" },
+                        "body": { "es": "1.4f es la marca personal de un fotógrafo profesional que entiende que cada evento es un **universo único**. Desde la emoción de una boda o unos quince, hasta la precisión estética de la fotografía gastronómica, su misión es capturar momentos mágicos con una mirada alegre y apasionada.\n\nLa marca refleja esa versatilidad: la **capacidad de adaptarse a cualquier entorno** y **conectar con las personas** para que la cámara sea solo un testigo invisible de la realidad.", "en": "1.4f is the personal brand of a professional photographer who understands that every event is a **unique universe**. From the emotion of a wedding or a 'Quinceañera' to the aesthetic precision of food photography, his mission is to capture magical moments with a joyful and passionate gaze.\n\nThe brand reflects that versatility: **the ability to adapt to any environment** and **connect with people** so the camera remains an invisible witness to reality." }
+                    },
+                    {
+                        "order": 2,
+                        "key": "logo",
+                        "subtitle": { "es": "Isologo", "en": "Logomark" },
+                        "title": { "es": "Cuando la marca se vuelve forma", "en": "When the brand takes shape" },
+                        "body": { "es": "El isologo nace de un elemento icónico del mundo de la fotografía: el diafragma. Su construcción circular representa la lente a través de la cual el fotógrafo observa el mundo, mientras que las aspas en rojo vibrante sugieren apertura, dinamismo y la captura de la luz.\n\nEl nombre 1.4f no es solo una especificación técnica; es una declaración de intenciones. Simboliza la máxima **luminosidad y el detalle**, destacando la importancia de **enfocar la esencia** de cada sujeto.", "en": "The isotype is born from an iconic element of the photography world: the diaphragm. Its circular construction represents the lens through which the photographer observes the world, while the vibrant red blades suggest openness, dynamism, and the capture of light.\n\nThe name 1.4f is not just a technical specification; it is a statement of intent. It symbolizes **maximum luminosity and detail**, highlighting the importance of **focusing on the essence** of each subject." },
+                        "media": [
+                            {
+                                "type": "image",
+                                "src": "isologo-1.4f.jpg",
+                                "alt": "Isologotipo de 1.4f",
+                                "role": "hero"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "key": "color",
+                        "subtitle": { "es": "Color", "en": "Color" },
+                        "title": { "es": "Donde la emoción toma color", "en": "Where emotion takes color" },
+                        "body": { "es": "La narrativa visual se apoya en el contraste entre el gris oscuro y el rojo intenso. Esta paleta busca transmitir un equilibrio entre la **profesionalidad técnica** y la **pasión creativa**.\n\nEl rojo actúa como el 'pulso' de la marca, representando la alegría, la energía de los eventos sociales y el entusiasmo que el fotógrafo pone en cada disparo. El gris aporta la sobriedad y la elegancia necesaria para un servicio profesional de alta calidad.", "en": "The visual narrative is built on the contrast between deep gray and intense red. This palette seeks to balance **technical professionalism** with **creative passion**.\n\nRed acts as the 'pulse' of the brand, representing joy, the energy of social events, and the enthusiasm the photographer pours into every shot. Gray provides the sobriety and elegance required for a high-quality professional service." },
+                        "palette": [ "#2563EB", "#22C55E", "#F59E0B" ],
+                        "principles": {
+                            "label": { "es": "Principios del color", "en": "Principles color" },
+                            "items": [
+                                {
+                                    "icon": "aperture",
+                                    "title": { "es": "Precisión", "en": "Precision" },
+                                    "description": { "es": "Los tonos oscuros reflejan el dominio técnico y el equipo de alta gama utilizado.", "en": "Dark tones reflect technical mastery and the high-end equipment used in every session." }
+                                },
+                                {
+                                    "icon": "camera",
+                                    "title": { "es": "Pasión", "en": "Passion" },
+                                    "description": { "es": "El rojo evoca la entrega y el amor por el arte de capturar instantes que no se repiten.", "en": "Red evokes the dedication and love for the art of capturing unrepeatable moments." }
+                                },
+                                {
+                                    "icon": "sparkles",
+                                    "title": { "es": "Adaptabilidad", "en": "Adaptability" },
+                                    "description": { "es": "La combinación visual es moderna y versátil, funcionando para todo tipo de eventos.", "en": "The visual combination is modern and versatile, working seamlessly for all types of events." }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "order": 4,
+                        "key": "typo",
+                        "subtitle": { "es": "Tipografía", "en": "Typography" },
+                        "title": { "es": "Donde nace la voz de la marca", "en": "Where the brand’s voice begins" },
+                        "body": { "es": "La tipografía combina una estructura sólida con la elegancia de la cursiva en la letra 'f'. Esta mezcla representa la dualidad del fotógrafo: la firmeza de la experiencia técnica y la fluidez de la sensibilidad artística. Es una voz visual **directa, profesional y sumamente cálida.**", "en": "The typography combines a solid structure with the elegance of the italicized 'f'. This mix represents the photographer's duality: the firmness of technical experience and the fluidity of artistic sensitivity. It is a visual voice that is **direct, professional, and deeply warm.**" }
+                    }
+                ]
             }
         },
         {
@@ -625,6 +1072,96 @@
             "img": "viro.jpg",
             "status": {
                 "key": "PUBLISHED"
+            },
+            "tech": [
+                {
+                    "es": "Branding",
+                    "en": "Branding"
+                },
+                {
+                    "es": "Packaging",
+                    "en": "Packaging"
+                },
+                {
+                    "es": "Illustrator",
+                    "en": "Illustrator"
+                }
+            ],
+            "caseStudy": {
+                "enabled": true,
+                "sections": [
+                    {
+                        "order": 1,
+                        "key": "brand",
+                        "subtitle": { "es": "Marca" , "en": "Brand" },
+                        "title": { "es": "Donde empieza la identidad", "en": "Where identity takes shape" },
+                        "body": { "es": "Viró es más que una propuesta gastronómica; es un emprendimiento que transforma ingredientes cotidianos en experiencias significativas. Especializado en sándwiches artesanales y desayunos personalizados, la marca se extiende también a productos de temporada y snacks saludables, manteniendo siempre un hilo conductor: la calidez de los vínculos y la historia familiar.\n\nLa identidad fue creada para destacar en un mercado saturado, ofreciendo una imagen que equilibra la fuerza emprendedora con la cercanía de lo hecho con amor.", "en": "Viró is more than just a gastronomic project; it is a brand that transforms everyday ingredients into meaningful experiences. Specializing in artisanal sandwiches and personalized breakfasts, the brand also offers seasonal products and healthy snacks, always maintaining a common thread: the warmth of family bonds and history.\n\nThe identity was created to stand out in a saturated market, offering an image that balances entrepreneurial strength with the closeness of something made with love." }
+                    },
+                    {
+                        "order": 2,
+                        "key": "logo",
+                        "subtitle": { "es": "Isologo", "en": "Logomark" },
+                        "title": { "es": "Cuando la marca se vuelve forma", "en": "When the brand takes shape" },
+                        "body": { "es": "El nombre Viró surge como una síntesis de identidad y afecto. El núcleo del diseño es el **acento circunflejo**, un elemento distintivo que cumple una doble función semántica: por un lado, actúa como una 'V' invertida que refuerza el nombre; por otro, simboliza el techo de un hogar, evocando protección y refugio familiar.\n\nPara dar respuesta a la variedad de productos, se diseñó un sistema de **isotipos específicos**. Cada categoría (sándwiches, desayunos, etc.) posee su propia representación visual, permitiendo que la marca sea flexible y organizada a través de stickers y piezas de comunicación independientes que conviven bajo el mismo sello de calidad.", "en": "The name Viró emerges as a synthesis of identity and affection. The core of the design is the **circumflex accent**, a distinctive element that serves a double semantic function: on one hand, it acts as an inverted “V” that reinforces the name; on the other, it symbolizes the roof of a house, evoking protection and family shelter.\n\nTo address the variety of products, a system of **specific isotypes** was designed. Each category (sandwiches, breakfasts, etc.) has its own visual representation, allowing the brand to be flexible and organized through stickers and independent communication pieces that coexist under the same seal of quality." },
+                        "media": [
+                            {
+                                "type": "image",
+                                "src": "logo-viro.jpg",
+                                "alt": "Logotipo de Viró",
+                                "role": "hero"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "key": "color",
+                        "subtitle": { "es": "Color", "en": "Color" },
+                        "title": { "es": "Donde la emoción toma color", "en": "Where emotion takes color" },
+                        "body": { "es": "La narrativa cromática de Viró se aleja de lo convencional para asignar una identidad propia a cada línea de productos. Esto facilita que el cliente **lo identifique rápidamente** y aporta un dinamismo visual único al packaging.\n\nEl uso de tonos verdes orgánicos para la línea de sándwiches y ocres cálidos para los desayunos no es casual; busca conectar directamente con la frescura de los ingredientes y la energía del comienzo del día.", "en": "Viró’s chromatic narrative moves away from the conventional by assigning a unique identity to each product line. This allows customers to **identify it quickly** and brings a unique visual dynamism to the packaging.\n\nThe use of organic green tones for the sandwich line and warm ochres for breakfasts is intentional; it seeks to connect directly with the freshness of the ingredients and the energy of starting the day." },
+                        "principles": {
+                            "label": { "es": "Principios del color", "en": "Principles color" },
+                            "items": [
+                                {
+                                    "icon": "layout-grid",
+                                    "title": { "es": "Claridad", "en": "Clarity" },
+                                    "description": { "es": "Se diseñó un sistema visual pensado para facilitar la elección del cliente: cada color permite identificar el producto favorito de un vistazo, manteniendo la propuesta ordenada y accesible.", "en": "A visual system designed to simplify the customer's choice: each color allows them to identify their favorite product at a glance, keeping the selection organized and accessible." }
+                                },
+                                {
+                                    "icon": "shuffle",
+                                    "title": { "es": "Versatilidad", "en": "Versatility" },
+                                    "description": { "es": "La identidad tiene la capacidad de crecer junto al emprendimiento, adaptándose con naturalidad desde los sándwiches cotidianos hasta las ediciones especiales.", "en": "The identity is built to grow alongside the business, naturally adapting from everyday sandwiches to special editions." }
+                                },
+                                {
+                                    "icon": "leaf",
+                                    "title": { "es": "Natural", "en": "Natural" },
+                                    "description": { "es": "El uso de tonos verdes y orgánicos rinde homenaje a la frescura de la materia prima y al respeto por los ingredientes naturales que definen a la marca.", "en": "The use of organic green tones pays tribute to the freshness of the raw materials and the respect for natural ingredients that define the brand." }
+                                },
+                                {
+                                    "icon": "heart",
+                                    "title": { "es": "Familiar", "en": "Familiar" },
+                                    "description": { "es": "A través de matices cálidos se busca envolver cada entrega, reflejando el cariño, la historia familiar y el cuidado artesanal presente en cada preparación.", "en": "Through warm nuances, the brand seeks to wrap every delivery, reflecting the love, family history, and handcrafted care present in every preparation." }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "order": 4,
+                        "key": "typo",
+                        "subtitle": { "es": "Tipografía", "en": "Typography" },
+                        "title": { "es": "Donde nace la voz de la marca", "en": "Where the brand’s voice begins" },
+                        "body": { "es": "La elección de la tipografía Arno Pro es clave para transmitir la personalidad de Viró. Sus trazos clásicos y elegantes aportan la seriedad de un negocio consolidado, mientras que su legibilidad y proporciones humanas refuerzan la voz cercana de la marca. Es una voz que transmite control y decisión, pero que se siente tan acogedora como un desayuno en familia.", "en": "The choice of Arno Pro typography is key to conveying Viró's personality. Its classic and elegant strokes provide the professional weight of a solid business, while its legibility and human proportions reinforce the brand's approachable voice. It is a voice that conveys control and decisiveness, yet feels as welcoming as a family breakfast." },
+                        "typography": {
+                            "fontName": "Arno Pro",
+                            "samples": [
+                                {
+                                    "weight": "bold caption",
+                                    "label": { "es": "Bold Caption", "en": "Bold Caption" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()"
+                                }
+                            ]
+                        }
+                    }
+                ]
             }
         }
     ]
