@@ -84,7 +84,7 @@ export default function ProjectDetail()
     return(
         <CompSection className="my-12 lg:!my-20">
             <BackButton label={t("back_projects")} />
-            <motion.div className="flex flex-col lg:flex-row lg:justify-between mt-12">
+            <motion.div className="flex flex-col lg:flex-row lg:justify-between mt-12 mb-8">
                 <motion.div>
                     <motion.span
                         initial={{ opacity: 0 }}
@@ -105,7 +105,7 @@ export default function ProjectDetail()
                     )}
                 </motion.div>
                 {(!!project?.demo_link || !!project?.github_link) && (
-                    <motion.div className="mb-10">
+                    <motion.div>
                         {project?.demo_link && (
                             <CustomButton 
                                 hRef={project.demo_link}
@@ -170,22 +170,22 @@ export default function ProjectDetail()
                                             {/* Color principal */}
                                             <div>
                                             <h3 className="text-lg font-semibold mb-4">
-                                                {section.palette.primary.label?.[lang]}
+                                                {section.palette?.primary?.label?.[lang]}
                                             </h3>
 
                                             <div className="flex items-center gap-6 p-4 rounded-xl border border-cardBorder w-fit">
                                                 <div
                                                     className="w-24 h-24 rounded-xl shadow-inner"
-                                                    style={{ backgroundColor: section.palette.primary.hex }}
+                                                    style={{ backgroundColor: section?.palette?.primary?.hex }}
                                                 />
 
                                                 <div className="space-y-1 text-sm">
                                                     <p className="font-semibold">
-                                                        {section.palette.primary.name?.[lang]}
+                                                        {section?.palette?.primary?.name?.[lang]}
                                                     </p>
-                                                    <p>HEX: {section.palette.primary.hex}</p>
-                                                    <p>RGB: {section.palette.primary.rgb}</p>
-                                                    <p>HSL: {section.palette.primary.hsl}</p>
+                                                    <p>HEX: {section?.palette?.primary?.hex}</p>
+                                                    <p>RGB: {section?.palette?.primary?.rgb}</p>
+                                                    <p>HSL: {section?.palette?.primary?.hsl}</p>
                                                 </div>
                                             </div>
                                             </div>
@@ -193,11 +193,11 @@ export default function ProjectDetail()
                                             {/* Colores secundarios */}
                                             <div>
                                             <h3 className="text-lg font-semibold mb-4">
-                                                {section.palette.secondaryLabel?.[lang]}
+                                                {section?.palette?.secondaryLabel?.[lang]}
                                             </h3>
 
                                             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
-                                                {section.palette.secondary.map((color, i) => (
+                                                {section?.palette?.secondary?.map((color, i) => (
                                                 <div
                                                     key={i}
                                                     className="flex items-center gap-4 p-4 rounded-xl border border-cardBorder w-fit"
@@ -224,11 +224,11 @@ export default function ProjectDetail()
                                         {section.principles && (
                                         <div className="mt-12">
                                             <h3 className="text-lg font-semibold mb-6">
-                                            {section.principles.label?.[lang]}
+                                            {section.principles?.label?.[lang]}
                                             </h3>
 
                                             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-                                            {section.principles.items.map((item, i) => {
+                                            {section?.principles?.items?.map((item, i) => {
                                                 const Icon = ICONS[item.icon]
 
                                                 return(
@@ -266,7 +266,7 @@ export default function ProjectDetail()
                                         </h3>
 
                                         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-                                        {section.typography.samples.map((sample, i) => (
+                                        {section?.typography?.samples?.map((sample, i) => (
                                             <motion.div
                                             key={i}
                                             className="p-6 rounded-2xl border border-cardBorder shadow-sm"
@@ -306,7 +306,7 @@ export default function ProjectDetail()
 
                                     {Array.isArray(section.media) && section.media.length > 0 && (
                                         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
-                                            {section.media.map((item, i) => {
+                                            {section?.media?.map((item, i) => {
                                                 if(item.type !== "image") return null
                                                 
                                                 const isHero = i === 0
