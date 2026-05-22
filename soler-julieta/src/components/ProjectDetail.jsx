@@ -94,7 +94,7 @@ export default function ProjectDetail()
                         {t("title_studycase")}
                     </motion.span>
                     <motion.h1
-                        className="text-2xl lg:text-4xl mb-2"
+                        className="text-3xl lg:text-[40px] mb-2"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                     >
