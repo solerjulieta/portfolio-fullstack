@@ -501,6 +501,66 @@
             "status": {
                 "key": "PUBLISHED"
             }
+        },
+        {
+            "id": "edu-12",
+            "uid": "analisis-datos",
+            "title": {
+                "es": "Análisis de Datos",
+                "en": "Data Analystic"
+            },
+            "institution": {
+                "es": "MundosE",
+                "en": "MundosE"
+            },
+            "start": 2026,
+            "end": 2026,
+            "category": {
+                "key": "Course",
+                "es": "Curso",
+                "en": "Course"
+            },
+            "subcategory": {
+                "es": "Software",
+                "en": "Software"
+            },
+            "mode": {
+                "es": "Virtual",
+                "en": "Online"
+            },
+            "status": {
+                "key": "PUBLISHED"
+            }
+        },
+        {
+            "id": "edu-13",
+            "uid": "programming-one",
+            "title": {
+                "es": "Programación backend 1: Desarrollo avanzado de backend flex",
+                "en": "Programming backend 1: Advanced flex backend development"
+            },
+            "institution": {
+                "es": "Coderhouse",
+                "en": "Coderhouse"
+            },
+            "start": 2026,
+            "end": 2026,
+            "category": {
+                "key": "Course",
+                "es": "Curso",
+                "en": "Course"
+            },
+            "subcategory": {
+                "es": "Software",
+                "en": "Software"
+            },
+            "mode": {
+                "es": "Virtual",
+                "en": "Online"
+            },
+            "status": {
+                "key": "PUBLISHED"
+            }
         }
     ],
     "projects": [
@@ -1157,6 +1217,187 @@
                                     "weight": "bold caption",
                                     "label": { "es": "Bold Caption", "en": "Bold Caption" },
                                     "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz\n1234567890.,:;?!$&*()"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "id": "project-6",
+            "uid": "wabi-sabi",
+            "title": "Wabi-sabi Cart",
+            "description": {
+                "es": "E-commerce con gestión de productos y carrito",
+                "en": "E-commerce with product management and shopping cart"
+            },
+            "tech": [
+                {
+                    "es": "Node.js",
+                    "en": "Node.js"
+                },
+                {
+                    "es": "Express",
+                    "en": "Express"
+                },
+                {
+                    "es": "MongoDB",
+                    "en": "MongoDB"
+                },
+                {
+                    "es": "JavaScript",
+                    "en": "JavaScript"
+                },
+                {
+                    "es": "Handlebars",
+                    "en": "Handlebars"
+                },
+                {
+                    "es": "WebSockets",
+                    "en": "WebSockets"
+                }                   
+            ],
+            "demo_link": "https://wabisabi-cart.onrender.com/",
+            "github_link": "https://github.com/solerjulieta/wabisabi-cart",
+            "category": {
+                "key": "Web",
+                "es": "Diseño Web",
+                "en": "Web Design"
+            },
+            "img": "",
+            "status": {
+                "key": "PUBLISHED"
+            },
+            "caseStudy": {
+                "enabled": false,
+                "sections": [
+                    {
+                        "order": 1,
+                        "key": "brand",
+                        "subtitle": { "es": "Marca" , "en": "Brand" },
+                        "title": { "es": "Donde empieza la identidad", "en": "Where identity takes shape" },
+                        "body": { "es": "Esta marca nace como una solución digital para conectar personas con movilidad reducida con conductores licenciados, priorizando accesibilidad, confianza y experiencia de uso.", "en": "This brand was created as a digital solution to connect people with reduced mobility with licensed drivers, prioritizing accessibility, trust, and user experience." }
+                    },
+                    {
+                        "order": 2,
+                        "key": "logo",
+                        "subtitle": { "es": "Isologo", "en": "Logomark" },
+                        "title": { "es": "Cuando la marca se vuelve forma", "en": "When the brand takes shape" },
+                        "body": { "es": "El isologo nace a partir de la esencia de la marca y de lo que buscamos transmitir en cada interacción.\n\n Su construcción parte de la idea de representar a ambos públicos y sus acciones dentro de la aplicación: la familia que busca, y el conductor que responde. \n\n A través de la letra “t” y el semicírculo se simboliza la discapacidad y, al mismo tiempo, la figura de una persona al volante. \n\n La letra “o” también fue intervenida: en su contraforma se revela una lupa, que representa la búsqueda, el encuentro y la confianza en cada viaje.", "en": "The isologo is born from the essence of the brand and what we aim to convey in every interaction.\n\nIts design is built around the idea of representing both audiences and their actions within the app: the family who searches, and the driver who responds.\n\nThrough the letter “t” and the semicircle, we symbolize disability and, at the same time, the figure of a person behind the wheel.\n\nThe letter “o” is also reimagined: within its counterform, a magnifying glass is revealed, representing the search, the connection, and the trust behind every journey." },
+                        "media": [
+                            {
+                                "type": "image",
+                                "src": "isologo-tebusco.jpg",
+                                "alt": "Isologotipo de te busco",
+                                "role": "hero"
+                            }
+                        ]
+                    },
+                    {
+                        "order": 3,
+                        "key": "coloer",
+                        "subtitle": { "es": "Color", "en": "Color" },
+                        "title": { "es": "Donde la emoción toma color", "en": "Where emotion takes color" },
+                        "body": { "es": "A través del color se construye una narrativa visual que refuerza los valores y objetivos de la marca. \n\nLa paleta elegida busca transmitir una sensación de **tranquilidad y seguridad**, generando un entorno de **confianza** en cada interacción. Al mismo tiempo, los matices y contrastes expresan **progreso y dinamismo**, reflejando el crecimiento constante del proyecto y su capacidad de adaptación. Finalmente, los tonos más cálidos aportan una dimensión emocional, evocando amor y afecto, y fortaleciendo el vínculo entre la marca y las personas que la utilizan.", "en": "Through color, a visual narrative is built to reinforce the brand’s values and objectives. \n\nThe chosen palette aims to convey a sense of **calm and security**, creating an environment of **trust** in every interaction. At the same time, the interplay of tones and contrasts expresses **progress and dynamism**, reflecting the project’s continuous growth and ability to evolve. Finally, warmer hues add an emotional layer, evoking love and care, and strengthening the bond between the brand and the people who engage with it." },
+                        "palette": {
+                            "primary": {
+                                "label": {
+                                    "es": "Color principal",
+                                    "en": "Primary color"
+                                },
+                                "name": {
+                                    "es": "Cerulean Blue",
+                                    "en": "Cerulean Blue"
+                                },
+                                "hex": "#0066CC",
+                                "rgb": "0, 102, 204",
+                                "hsl": "210°, 100%, 40%"
+                            },
+                            "secondaryLabel": {
+                                "es": "Colores secundarios",
+                                "en": "Secondary colors"
+                            },
+                            "secondary": [
+                                {
+                                    "name": { "es": "Light Azure", "en": "Light Azure" },
+                                    "hex": "#3399FF",
+                                    "rgb": "51, 153, 255",
+                                    "hsl": "210°, 100%, 60%"
+                                },
+                                {
+                                    "name": { "es": "Navy Blue", "en": "Navy Blue" },
+                                    "hex": "#003366",
+                                    "rgb": "0, 51, 102",
+                                    "hsl": "210°, 100%, 20%"
+                                },
+                                {
+                                    "name": { "es": "Blue Violet", "en": "Blue Violet" },
+                                    "hex": "#6633FF",
+                                    "rgb": "102, 51, 255",
+                                    "hsl": "255°, 100%, 60%"
+                                },
+                                {
+                                    "name": { "es": "Amethyst Purple", "en": "Amethyst Purple" },
+                                    "hex": "#9933CC",
+                                    "rgb": "153, 51, 204",
+                                    "hsl": "280°, 60%, 50%"
+                                }
+                            ]
+                        },
+                        "principles": {
+                            "label": { "es": "Principios del color", "en": "Principles color" },
+                            "items": [
+                                {
+                                    "icon": "shield-check",
+                                    "title": { "es": "Seguridad", "en": "Security" },
+                                    "description": { "es": "El uso del color refuerza la claridad y la transparencia, comunicando que cada interacción se da dentro de un entorno verificado y confiable.", "en": "The use of color reinforces clarity and transparency, communicating that every interaction takes place within a verified and trustworthy environment." }
+                                },
+                                {
+                                    "icon": "eye",
+                                    "title": { "es": "Confianza", "en": "Trust" },
+                                    "description": { "es": "La consistencia cromática construye una identidad reconocible que acompaña al usuario y fortalece la confianza en cada decisión.", "en": "Chromatic consistency builds a recognizable identity that supports users and strengthens trust in every decision." }
+                                },
+                                {
+                                    "icon": "users",
+                                    "title": { "es": "Inclusión", "en": "Inclusion" },
+                                    "description": { "es": "El sistema visual se diseña para ser accesible y empático, promoviendo una experiencia clara, legible y abierta a todas las personas.", "en": "The visual system is designed to be accessible and empathetic, promoting a clear, legible, and open experience for everyone." }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "order": 4,
+                        "key": "typo",
+                        "subtitle": { "es": "Tipografía", "en": "Typography" },
+                        "title": { "es": "Donde nace la voz de la marca", "en": "Where the brand’s voice begins" },
+                        "body": { "es": "La tipografía es una extensión de la personalidad de la marca. A través de sus formas y ritmos construye una voz visual clara y cercana, que guía la lectura y refuerza la confianza en cada interacción. Sus trazos transmiten **legibilidad, amistad, flexibilidad y modernidad**, asegurando una experiencia coherente y accesible en todos los puntos de contacto.", "en": "Typography is an extension of the brand’s personality. Through its shapes and rhythms, it builds a clear and approachable visual voice that guides reading and reinforces trust in every interaction. Its strokes convey **legibility, friendliness, flexibility, and modernity**, ensuring a coherent and accessible experience across all touchpoints." },
+                        "typography": {
+                            "fontName": "Dosis",
+                            "samples": [
+                                {
+                                    "weight": "regular",
+                                    "label": { "es": "Regular", "en": "Regular" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Se recomienda utilizar esta variante para textos largos y contenido principal, priorizando la legibilidad y la comodidad de lectura.", "en": "This variant is recommended for long-form text and main content, prioritizing readability and visual comfort." }
+                                },
+                                {
+                                    "weight": "medium",
+                                    "label": { "es": "Medium", "en": "Medium" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Ideal para reforzar jerarquías dentro del texto y destacar información sin perder claridad ni coherencia visual.", "en": "Ideal for reinforcing hierarchy within text and highlighting information while maintaining clarity and visual consistency." }
+                                },
+                                {
+                                    "weight": "semibold",
+                                    "label": { "es": "SemiBold", "en": "SemiBold" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Pensada para títulos y encabezados, aporta presencia visual y dirige la atención hacia los elementos clave de la interfaz.", "en": "Designed for titles and headings, it adds visual presence and directs attention to key interface elements." }
+                                },
+                                {
+                                    "weight": "bold",
+                                    "label": { "es": "Bold", "en": "Bold" },
+                                    "characters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\nabcdefghijklmnopqrstuvwxyz\n\n1234567890.,:;?!$&*()",
+                                    "usage": { "es": "Se utiliza para resaltar palabras o mensajes prioritarios, generando énfasis y reforzando el impacto visual.", "en": "Used to highlight key words or priority messages, creating emphasis and reinforcing visual impact." }
                                 }
                             ]
                         }
