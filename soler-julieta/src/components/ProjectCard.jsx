@@ -51,13 +51,13 @@ export default function ProjectCard({ project, index })
                     )}
                     <h3 className="mb-1.5 lg:text-lg">{project.title}</h3>
                     <p className="text-sm lg:text-base text-txtGrey mb-4">{project.description?.[lang]}</p>
-                    <div className="mt-auto">
+                    <div className="flex flex-col lg:flex-row mt-auto gap-2">
                         {project.demo_link && (
                             <CustomButton 
                                 hRef={project.demo_link}
                                 txt="Demo"
                                 Icon={MonitorPlay}
-                                className="bg-mainViolet text-white hover:bg-darkViolet"
+                                className="bg-mainViolet text-white hover:bg-darkViolet w-full"
                                 onClick={(e) => {
                                     e.stopPropagation()
                                     registerEvent("demo_click")
@@ -69,7 +69,7 @@ export default function ProjectCard({ project, index })
                                 hRef={project.github_link}
                                 txt="Github"
                                 Icon={Github}
-                                className="border-2 border-mainViolet/10 text-mainViolet hover:border-darkViolet hover:text-darkViolet"
+                                className="border-2 border-mainViolet/10 text-mainViolet hover:border-darkViolet hover:text-darkViolet w-full"
                                 onClick={(e) => {
                                     e.stopPropagation()
                                     registerEvent("github_click")
