@@ -20,7 +20,7 @@ async function getAll()
                 "caseStudy.sections": 0,
             }
         }
-    ).sort({ _id: -1 }).toArray()
+    ).sort({ created_at: -1 }).toArray()
 
     const statusIds = []
     const categoryIds = []
