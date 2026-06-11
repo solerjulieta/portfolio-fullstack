@@ -560,7 +560,37 @@
             },
             "status": {
                 "key": "PUBLISHED"
-            }
+            },
+            "skills":[
+                {
+                    "es": "Node.js",
+                    "en": "Node.js"
+                },
+                {
+                    "es": "Express",
+                    "en": "Express"
+                },
+                {
+                    "es": "MongoDB",
+                    "en": "MongoDB"
+                },
+                {
+                    "es": "Mongoose",
+                    "en": "Mongoose"
+                },
+                {
+                    "es": "JavaScript",
+                    "en": "JavaScript"
+                },
+                {
+                    "es": "Handlebars",
+                    "en": "Handlebars"
+                },
+                {
+                    "es": "WebSockets",
+                    "en": "WebSockets"
+                }
+            ]
         }
     ],
     "projects": [

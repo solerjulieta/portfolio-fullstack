@@ -8,7 +8,9 @@ import {
     SiHtml5,
     SiCss3,
     SiPhp,
-    SiMysql
+    SiMysql,
+    SiHandlebars,
+    SiSocketdotio,
 } from 'react-icons/si'
 
 const iconMap = {
@@ -21,7 +23,9 @@ const iconMap = {
     "HTML5": SiHtml5,
     "CSS": SiCss3,
     "PHP": SiPhp,
-    "MySQL": SiMysql
+    "MySQL": SiMysql,
+    "Handlebars": SiHandlebars,
+    "WebSockets": SiSocketdotio
 }
 
 export default function TechTags({ tags, className })
