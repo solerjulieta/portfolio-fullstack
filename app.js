@@ -30,15 +30,18 @@ app.use(cookieParser())
 
 app.use(cors({
     origin: (origin, callback) => {
-        if (!origin) return callback(null, true) // permite requests sin origin (ej: Postman, curl)
+        if (!origin) return callback(null, true) 
         
-        const allowed = origin === 'https://julieta-soler.vercel.app' || 
-                         /\.vercel\.app$/.test(origin)
+        const isAllowed = origin === 'https://julieta-soler.vercel.app' || 
+                          /\.vercel\.app$/.test(origin) || 
+                          /localhost:/.test(origin)
         
-        callback(null, allowed)
+        if (isAllowed) {
+            callback(null, true)
+        } else {
+            callback(new Error('No permitido por CORS'))
+        }
     },
-    origin: ['https://julieta-soler.vercel.app', 'https://portfolio-api-5e52.onrender.com', // El dominio de tu propio backend en Render (aunque a veces no es necesario, es buena práctica)
-        'https://*.vercel.app'], 
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization', 'auth_token'],
     credentials: true
