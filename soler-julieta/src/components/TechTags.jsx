@@ -9,7 +9,7 @@ import {
     SiCss3,
     SiPhp,
     SiMysql,
-    SiHandlebars,
+    //SiHandlebars,
     SiSocketdotio,
 } from 'react-icons/si'
 
@@ -24,7 +24,7 @@ const iconMap = {
     "CSS": SiCss3,
     "PHP": SiPhp,
     "MySQL": SiMysql,
-    "Handlebars": SiHandlebars,
+    //"Handlebars": SiHandlebars,
     "WebSockets": SiSocketdotio
 }
 

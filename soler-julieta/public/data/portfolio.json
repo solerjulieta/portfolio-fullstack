@@ -536,8 +536,8 @@
             "id": "edu-13",
             "uid": "programming-one",
             "title": {
-                "es": "Programación backend 1: Desarrollo avanzado de backend flex",
-                "en": "Programming backend 1: Advanced flex backend development"
+                "es": "Programación backend I: Desarrollo avanzado de backend flex",
+                "en": "Programming backend I: Advanced flex backend development"
             },
             "institution": {
                 "es": "Coderhouse",
@@ -591,6 +591,62 @@
                     "en": "WebSockets"
                 }
             ]
+        },
+        {
+            "id": "edu-13",
+            "uid": "programming-two",
+            "title": {
+                "es": "Programación backend II: Diseño y Arquitectura Backend Flex",
+                "en": "Programming backend II: Flex Backend Design and Architecture"
+            },
+            "institution": {
+                "es": "Coderhouse",
+                "en": "Coderhouse"
+            },
+            "start": 2026,
+            "end": 2026,
+            "category": {
+                "key": "Course",
+                "es": "Curso",
+                "en": "Course"
+            },
+            "subcategory": {
+                "es": "Software",
+                "en": "Software"
+            },
+            "mode": {
+                "es": "Virtual",
+                "en": "Online"
+            },
+            "status": {
+                "key": "PUBLISHED"
+            },
+            "skills":[
+                {
+                    "es": "Node.js",
+                    "en": "Node.js"
+                },
+                {
+                    "es": "Express",
+                    "en": "Express"
+                },
+                {
+                    "es": "MongoDB",
+                    "en": "MongoDB"
+                },
+                {
+                    "es": "Mongoose",
+                    "en": "Mongoose"
+                },
+                {
+                    "es": "JavaScript",
+                    "en": "JavaScript"
+                },
+                {
+                    "es": "JWT",
+                    "en": "JWT"
+                }
+            ]
         }
     ],
     "projects": [
@@ -625,6 +681,7 @@
             "status": {
                 "key": "PUBLISHED"
             },
+            "created_at": "2025-02-01T13:20:38.678+00:00",
             "caseStudy": {
                 "enabled": true,
                 "sections": [
@@ -652,7 +709,7 @@
                     },
                     {
                         "order": 3,
-                        "key": "coloer",
+                        "key": "color",
                         "subtitle": { "es": "Color", "en": "Color" },
                         "title": { "es": "Donde la emoción toma color", "en": "Where emotion takes color" },
                         "body": { "es": "A través del color se construye una narrativa visual que refuerza los valores y objetivos de la marca. \n\nLa paleta elegida busca transmitir una sensación de **tranquilidad y seguridad**, generando un entorno de **confianza** en cada interacción. Al mismo tiempo, los matices y contrastes expresan **progreso y dinamismo**, reflejando el crecimiento constante del proyecto y su capacidad de adaptación. Finalmente, los tonos más cálidos aportan una dimensión emocional, evocando amor y afecto, y fortaleciendo el vínculo entre la marca y las personas que la utilizan.", "en": "Through color, a visual narrative is built to reinforce the brand’s values and objectives. \n\nThe chosen palette aims to convey a sense of **calm and security**, creating an environment of **trust** in every interaction. At the same time, the interplay of tones and contrasts expresses **progress and dynamism**, reflecting the project’s continuous growth and ability to evolve. Finally, warmer hues add an emotional layer, evoking love and care, and strengthening the bond between the brand and the people who engage with it." },
@@ -797,6 +854,7 @@
             "status": {
                 "key": "PUBLISHED"
             },
+            "created_at": "2022-12-01T13:23:04.015+00:00",
             "caseStudy": {
                 "enabled": false,
                 "sections": [
@@ -824,7 +882,7 @@
                     },
                     {
                         "order": 3,
-                        "key": "coloer",
+                        "key": "color",
                         "subtitle": { "es": "Color", "en": "Color" },
                         "title": { "es": "Donde la emoción toma color", "en": "Where emotion takes color" },
                         "body": { "es": "A través del color se construye una narrativa visual que refuerza los valores y objetivos de la marca. \n\nLa paleta elegida busca transmitir una sensación de **tranquilidad y seguridad**, generando un entorno de **confianza** en cada interacción. Al mismo tiempo, los matices y contrastes expresan **progreso y dinamismo**, reflejando el crecimiento constante del proyecto y su capacidad de adaptación. Finalmente, los tonos más cálidos aportan una dimensión emocional, evocando amor y afecto, y fortaleciendo el vínculo entre la marca y las personas que la utilizan.", "en": "Through color, a visual narrative is built to reinforce the brand’s values and objectives. \n\nThe chosen palette aims to convey a sense of **calm and security**, creating an environment of **trust** in every interaction. At the same time, the interplay of tones and contrasts expresses **progress and dynamism**, reflecting the project’s continuous growth and ability to evolve. Finally, warmer hues add an emotional layer, evoking love and care, and strengthening the bond between the brand and the people who engage with it." },
@@ -964,6 +1022,7 @@
                     "en": "Illustrator"
                 }
             ],
+            "created_at": "2017-07-27T15:12:15.096+00:00",
             "caseStudy": {
                 "enabled": true,
                 "sections": [
@@ -1083,6 +1142,7 @@
                     "en": "Illustrator"
                 }
             ],
+            "created_at": "2015-07-27T15:23:18.131+00:00",
             "caseStudy": {
                 "enabled": true,
                 "sections": [
@@ -1177,6 +1237,7 @@
                     "en": "Illustrator"
                 }
             ],
+            "created_at": "2019-07-27T15:28:19.766+00:00",
             "caseStudy": {
                 "enabled": true,
                 "sections": [
@@ -1257,10 +1318,10 @@
         {
             "id": "project-6",
             "uid": "wabi-sabi",
-            "title": "Wabi-sabi Cart",
+            "title": "Wabi-sabi",
             "description": {
-                "es": "E-commerce con gestión de productos y carrito",
-                "en": "E-commerce with product management and shopping cart"
+                "es": "E-commerce con gestión de productos y carrito.",
+                "en": "E-commerce with product management and shopping cart."
             },
             "tech": [
                 {
@@ -1299,99 +1360,55 @@
             "status": {
                 "key": "PUBLISHED"
             },
+            "created_at": "2026-06-01T15:28:19.766+00:00",
             "caseStudy": {
-                "enabled": false,
+                "enabled": true,
                 "sections": [
                     {
                         "order": 1,
                         "key": "brand",
                         "subtitle": { "es": "Marca" , "en": "Brand" },
                         "title": { "es": "Donde empieza la identidad", "en": "Where identity takes shape" },
-                        "body": { "es": "Esta marca nace como una solución digital para conectar personas con movilidad reducida con conductores licenciados, priorizando accesibilidad, confianza y experiencia de uso.", "en": "This brand was created as a digital solution to connect people with reduced mobility with licensed drivers, prioritizing accessibility, trust, and user experience." }
+                        "body": { "es": "Todo empezó con un tazón de ramen. Hay un restaurant en Córdoba donde el único plato principal es ramen — un ramen exquisito. Y sin embargo, su tienda de productos vive en un PDF. Un archivo estático, con imágenes estáticas y precios imposibles de actualizar dinámicamente.\n\nEse contraste fue el punto de partida: ¿cómo sería la tienda que ese lugar merece tener?\n\n El nombre **wabi-sabi (侘寂)** es una filosofía estética japonesa que encuentra **belleza en lo imperfecto, lo incompleto y lo efímero**. Una grieta en un tazón de cerámica. El desgaste de una tela de lino. La pátina del tiempo sobre la madera. Ese concepto define todo: la marca no vende perfección, **vende autenticidad**.", "en": "It all started with a bowl of ramen. There is a restaurant in Córdoba where the only main dish is ramen — an exquisite ramen. And yet, their merchandise shop lives in a PDF. A static file, with static images and prices that are impossible to update dynamically.\n\n That contrast was the starting point: what would the shop that this place deserves look like?\n\n The name **wabi-sabi (侘寂)** is a Japanese aesthetic philosophy that finds **beauty in the imperfect, the incomplete, and the ephemeral**. A crack in a ceramic bowl. The wear and tear of a linen fabric. The patina of time on wood. That concept defines everything: the brand doesn't sell perfection, **it sells authenticity**." }
                     },
                     {
                         "order": 2,
                         "key": "logo",
-                        "subtitle": { "es": "Isologo", "en": "Logomark" },
+                        "subtitle": { "es": "Logotipo", "en": "Logomark" },
                         "title": { "es": "Cuando la marca se vuelve forma", "en": "When the brand takes shape" },
-                        "body": { "es": "El isologo nace a partir de la esencia de la marca y de lo que buscamos transmitir en cada interacción.\n\n Su construcción parte de la idea de representar a ambos públicos y sus acciones dentro de la aplicación: la familia que busca, y el conductor que responde. \n\n A través de la letra “t” y el semicírculo se simboliza la discapacidad y, al mismo tiempo, la figura de una persona al volante. \n\n La letra “o” también fue intervenida: en su contraforma se revela una lupa, que representa la búsqueda, el encuentro y la confianza en cada viaje.", "en": "The isologo is born from the essence of the brand and what we aim to convey in every interaction.\n\nIts design is built around the idea of representing both audiences and their actions within the app: the family who searches, and the driver who responds.\n\nThrough the letter “t” and the semicircle, we symbolize disability and, at the same time, the figure of a person behind the wheel.\n\nThe letter “o” is also reimagined: within its counterform, a magnifying glass is revealed, representing the search, the connection, and the trust behind every journey." },
+                        "body": { "es": "Todos los colores son cálidos o levemente fríos — nunca neutros perfectos. Sin blancos puros, sin negros puros. La paleta remite a los materiales que la marca vende: arcilla, lino, madera, cerámica sin esmaltar.", "en": "The isologo is born from the essence of the brand and what we aim to convey in every interaction.\n\nIts design is built around the idea of representing both audiences and their actions within the app: the family who searches, and the driver who responds.\n\nThrough the letter “t” and the semicircle, we symbolize disability and, at the same time, the figure of a person behind the wheel.\n\nThe letter “o” is also reimagined: within its counterform, a magnifying glass is revealed, representing the search, the connection, and the trust behind every journey." },
                         "media": [
                             {
                                 "type": "image",
-                                "src": "isologo-tebusco.jpg",
-                                "alt": "Isologotipo de te busco",
+                                "src": "logo-wabisabi.jpg",
+                                "alt": "Logotipo de Wabi-sabi",
                                 "role": "hero"
                             }
                         ]
                     },
                     {
                         "order": 3,
-                        "key": "coloer",
+                        "key": "color",
                         "subtitle": { "es": "Color", "en": "Color" },
                         "title": { "es": "Donde la emoción toma color", "en": "Where emotion takes color" },
-                        "body": { "es": "A través del color se construye una narrativa visual que refuerza los valores y objetivos de la marca. \n\nLa paleta elegida busca transmitir una sensación de **tranquilidad y seguridad**, generando un entorno de **confianza** en cada interacción. Al mismo tiempo, los matices y contrastes expresan **progreso y dinamismo**, reflejando el crecimiento constante del proyecto y su capacidad de adaptación. Finalmente, los tonos más cálidos aportan una dimensión emocional, evocando amor y afecto, y fortaleciendo el vínculo entre la marca y las personas que la utilizan.", "en": "Through color, a visual narrative is built to reinforce the brand’s values and objectives. \n\nThe chosen palette aims to convey a sense of **calm and security**, creating an environment of **trust** in every interaction. At the same time, the interplay of tones and contrasts expresses **progress and dynamism**, reflecting the project’s continuous growth and ability to evolve. Finally, warmer hues add an emotional layer, evoking love and care, and strengthening the bond between the brand and the people who engage with it." },
-                        "palette": {
-                            "primary": {
-                                "label": {
-                                    "es": "Color principal",
-                                    "en": "Primary color"
-                                },
-                                "name": {
-                                    "es": "Cerulean Blue",
-                                    "en": "Cerulean Blue"
-                                },
-                                "hex": "#0066CC",
-                                "rgb": "0, 102, 204",
-                                "hsl": "210°, 100%, 40%"
-                            },
-                            "secondaryLabel": {
-                                "es": "Colores secundarios",
-                                "en": "Secondary colors"
-                            },
-                            "secondary": [
-                                {
-                                    "name": { "es": "Light Azure", "en": "Light Azure" },
-                                    "hex": "#3399FF",
-                                    "rgb": "51, 153, 255",
-                                    "hsl": "210°, 100%, 60%"
-                                },
-                                {
-                                    "name": { "es": "Navy Blue", "en": "Navy Blue" },
-                                    "hex": "#003366",
-                                    "rgb": "0, 51, 102",
-                                    "hsl": "210°, 100%, 20%"
-                                },
-                                {
-                                    "name": { "es": "Blue Violet", "en": "Blue Violet" },
-                                    "hex": "#6633FF",
-                                    "rgb": "102, 51, 255",
-                                    "hsl": "255°, 100%, 60%"
-                                },
-                                {
-                                    "name": { "es": "Amethyst Purple", "en": "Amethyst Purple" },
-                                    "hex": "#9933CC",
-                                    "rgb": "153, 51, 204",
-                                    "hsl": "280°, 60%, 50%"
-                                }
-                            ]
-                        },
+                        "body": { "es": "Todos los colores son cálidos o levemente fríos — nunca neutros perfectos. Sin blancos puros, sin negros puros. La paleta remite a los materiales que la marca vende: arcilla, lino, madera, cerámica sin esmaltar.", "en": "All colors are warm or slightly cool — never perfect neutrals. No pure whites, no pure blacks. The palette evokes the materials the brand sells: clay, linen, wood, unglazed ceramics." },
                         "principles": {
                             "label": { "es": "Principios del color", "en": "Principles color" },
                             "items": [
                                 {
                                     "icon": "shield-check",
-                                    "title": { "es": "Seguridad", "en": "Security" },
-                                    "description": { "es": "El uso del color refuerza la claridad y la transparencia, comunicando que cada interacción se da dentro de un entorno verificado y confiable.", "en": "The use of color reinforces clarity and transparency, communicating that every interaction takes place within a verified and trustworthy environment." }
+                                    "title": { "es": "Autenticidad", "en": "Security" },
+                                    "description": { "es": "La paleta evita los neutros perfectos deliberadamente. Cada tono lleva una referencia material concreta — no son colores de interfaz genéricos, son colores que remiten a los objetos que la tienda vende.", "en": "The use of color reinforces clarity and transparency, communicating that every interaction takes place within a verified and trustworthy environment." }
                                 },
                                 {
                                     "icon": "eye",
-                                    "title": { "es": "Confianza", "en": "Trust" },
-                                    "description": { "es": "La consistencia cromática construye una identidad reconocible que acompaña al usuario y fortalece la confianza en cada decisión.", "en": "Chromatic consistency builds a recognizable identity that supports users and strengthens trust in every decision." }
+                                    "title": { "es": "Jerarquía silenciosa", "en": "Trust" },
+                                    "description": { "es": "El terracota es el único color activo: hover de links, precio de oferta, alertas de stock bajo. El matcha queda reservado para estados positivos. El resto de la paleta sostiene sin competir.", "en": "Chromatic consistency builds a recognizable identity that supports users and strengthens trust in every decision." }
                                 },
                                 {
                                     "icon": "users",
-                                    "title": { "es": "Inclusión", "en": "Inclusion" },
-                                    "description": { "es": "El sistema visual se diseña para ser accesible y empático, promoviendo una experiencia clara, legible y abierta a todas las personas.", "en": "The visual system is designed to be accessible and empathetic, promoting a clear, legible, and open experience for everyone." }
+                                    "title": { "es": "Consistencia", "en": "Inclusion" },
+                                    "description": { "es": "El sistema se aplica de forma idéntica en cada vista — productos, detalle, carrito — generando una experiencia reconocible y coherente de principio a fin", "en": "The visual system is designed to be accessible and empathetic, promoting a clear, legible, and open experience for everyone." }
                                 }
                             ]
                         }

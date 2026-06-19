@@ -64,6 +64,12 @@ export default function MyProjects()
         return data.filter(item => item.status?.key === "PUBLISHED")
     }
 
+    function sortByDate(data) {
+        return [...data].sort(
+            (a, b) => new Date(b.created_at) - new Date(a.created_at)
+        )
+    }
+
     useEffect(() => {
         let isMounted = true 
 
@@ -72,7 +78,7 @@ export default function MyProjects()
                 const snapshot = await loadProjectsSnapshot()
                 if(!isMounted) return
 
-                const published = publishOnly(snapshot)
+                const published = sortByDate(publishOnly(snapshot))
                 setProjects(published)
             } catch (err) {
                 console.warn("No snapshot available", err)
