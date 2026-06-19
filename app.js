@@ -59,7 +59,6 @@ app.use('/api', CVApiRoute)
 app.use('/api', ProjectEventsApiRoute)
 
 const PORT = process.env.PORT || 3000
-const PORT = 3000
 
 app.listen(PORT, () => {
     console.log(`El servidor se está ejecutando - http://localhost:${PORT}`)
