@@ -29,8 +29,14 @@ app.use(express.json())
 app.use(cookieParser())
 
 app.use(cors({
-    origin: ['https://julieta-soler.vercel.app', 'https://portfolio-api-5e52.onrender.com', // El dominio de tu propio backend en Render (aunque a veces no es necesario, es buena práctica)
-        'https://*.vercel.app'], 
+    origin: (origin, callback) => {
+        if (!origin) return callback(null, true) // permite requests sin origin (ej: Postman, curl)
+        
+        const allowed = origin === 'https://julieta-soler.vercel.app' || 
+                         /\.vercel\.app$/.test(origin)
+        
+        callback(null, allowed)
+    },
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization', 'auth_token'],
     credentials: true
@@ -50,7 +56,7 @@ app.use('/api', TechnologiesApiRoute)
 app.use('/api', CVApiRoute)
 app.use('/api', ProjectEventsApiRoute)
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
     console.log(`El servidor se está ejecutando - http://localhost:${PORT}`)
